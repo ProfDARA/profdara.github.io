@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfDARA - GitHub Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .repo-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .repo-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .repo-icon {
+            font-size: 24px;
+        }
+
+        .repo-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #667eea;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .repo-name:hover {
+            text-decoration: underline;
+        }
+
+        .repo-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .stat-icon {
+            font-size: 16px;
+        }
+
+        .language-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            font-size: 0.85em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            padding: 40px;
+        }
+
+        .error {
+            text-align: center;
+            color: white;
+            background: rgba(255, 59, 48, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .repos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <img class="profile-avatar" id="avatar" src="" alt="Profile Avatar">
+                <div>
+                    <h1 id="username">ProfDARA</h1>
+                    <p class="tagline" id="bio">Loading profile...</p>
+                    <div class="social-links">
+                        <a href="https://github.com/ProfDARA" target="_blank">🔗 GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h2 class="section-title">🚀 Flagship Repositories</h2>
+            <div id="repos-container">
+                <div class="loading">Loading repositories...</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 ProfDARA | Built with ❤️ and GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        const username = 'ProfDARA';
+        const reposContainer = document.getElementById('repos-container');
+
+        // Fetch user profile
+        async function fetchProfile() {
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}`);
+                const data = await response.json();
+                
+                // Update profile information
+                document.getElementById('avatar').src = data.avatar_url;
+                document.getElementById('username').textContent = data.name || data.login;
+                document.getElementById('bio').textContent = data.bio || 'GitHub Developer';
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        }
+
+        // Fetch repositories
+        async function fetchRepositories() {
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}/repos?sort=stars&per_page=100`);
+                const repos = await response.json();
+
+                if (repos.message) {
+                    throw new Error(repos.message);
+                }
+
+                // Filter out forks and sort by stars
+                const flagshipRepos = repos
+                    .filter(repo => !repo.fork)
+                    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+                    .slice(0, 6); // Show top 6 repositories
+
+                displayRepositories(flagshipRepos);
+            } catch (error) {
+                reposContainer.innerHTML = `
+                    <div class="error">
+                        <h3>⚠️ Error Loading Repositories</h3>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Display repositories
+        function displayRepositories(repos) {
+            if (repos.length === 0) {
+                reposContainer.innerHTML = `
+                    <div class="error">
+                        <p>No repositories found.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            reposContainer.innerHTML = `
+                <div class="repos-grid">
+                    ${repos.map(repo => `
+                        <div class="repo-card" onclick="window.open('${repo.html_url}', '_blank')">
+                            <div class="repo-header">
+                                <span class="repo-icon">📦</span>
+                                <a href="${repo.html_url}" class="repo-name" target="_blank" onclick="event.stopPropagation()">
+                                    ${repo.name}
+                                </a>
+                            </div>
+                            <p class="repo-description">
+                                ${repo.description || 'No description available'}
+                            </p>
+                            ${repo.language ? `<span class="language-tag">${repo.language}</span>` : ''}
+                            <div class="repo-stats">
+                                <span class="stat">
+                                    <span class="stat-icon">⭐</span>
+                                    <span>${repo.stargazers_count}</span>
+                                </span>
+                                <span class="stat">
+                                    <span class="stat-icon">🔱</span>
+                                    <span>${repo.forks_count}</span>
+                                </span>
+                                ${repo.language ? `
+                                    <span class="stat">
+                                        <span class="stat-icon">💻</span>
+                                        <span>${repo.language}</span>
+                                    </span>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Initialize
+        fetchProfile();
+        fetchRepositories();
+    </script>
+</body>
+</html>
