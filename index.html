@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome to Danang's Personal page </title>
+  <link rel="icon" href="data:,"></link>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#60a5fa; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px; --pad:20px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,var(--bg),#071024 120%); color:#e6eef8; min-height:100vh}
+    .wrap{max-width:var(--maxw);margin:30px auto;padding:var(--pad)}
+
+    /* Top nav */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#38bdf8);display:flex;align-items:center;justify-content:center;color:#02203a;font-weight:700}
+    nav{display:flex;gap:10px}
+    .navlink{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
+    .navlink.active{background:var(--glass);color:var(--accent)}
+
+    /* Card layout */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px;padding:20px;margin-top:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    /* grid for profile + sidebar */
+    .grid{display:grid;grid-template-columns:280px 1fr;gap:18px}
+    .avatar{width:100%;border-radius:10px;overflow:hidden}
+    .avatar img{width:100%;display:block}
+    .meta{margin-top:12px}
+    .meta h2{margin:0 0 6px}
+    .meta p{color:var(--muted);margin:0}
+
+    /* Experience list */
+    .xp-item{padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:10px}
+    .xp-item h4{margin:0}
+    .xp-item small{color:var(--muted)}
+
+    /* Skill Tree */
+    .tree-wrap{height:640px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.0));display:flex;align-items:center;justify-content:center;border-radius:10px}
+    svg{max-width:100%;height:100%;}
+
+   .node{cursor:pointer;transition:filter .15s}
+   /* avoid scaling the node on hover to prevent the SVG hit area from moving and causing jitter
+     instead use brightness/stroke changes handled in JS/CSS */
+   .node:hover{filter:brightness(1.08)}
+    .node circle{stroke:#08304a;stroke-width:3}
+    .node text{font-size:13px;text-anchor:middle;fill:#e6eef8}
+    .link{stroke:rgba(255,255,255,0.12);stroke-width:2}
+    .active-node circle{fill:var(--accent)}
+
+    /* info panel */
+    .info{position:fixed;right:20px;bottom:20px;background:#041226;padding:12px;border-radius:10px;min-width:220px;border:1px solid rgba(255,255,255,0.03)}
+    .info h3{margin:0 0 6px}
+    .info p{margin:0;color:var(--muted);font-size:14px}
+
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.info{position:static;margin-top:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">DA</div>
+        <div>
+          <div style="font-weight:700">Danang Agung Restu Aji</div>
+          <div style="font-size:12px;color:var(--muted)">NLP Research Engineer • Business Automation • 150% Discipline</div>
+        </div>
+      </div>
+      <nav id="topnav">
+        <a class="navlink active" href="#profil" data-target="profil">Profil</a>
+        <a class="navlink" href="#pengalaman" data-target="pengalaman">Pengalaman</a>
+        <a class="navlink" href="#skill" data-target="skill">Skill & Sertifikasi</a>
+        <a class="navlink" href="#portfolio" data-target="portfolio">Portfolio</a>
+      </nav>
+    </header>
+
+    <!-- Profil -->
+    <main id="profil" class="card page">
+      <div class="grid">
+        <aside>
+          <div class="avatar"><img src="https://picsum.photos/seed/personal/500/400" alt="avatar"></div>
+          <div class="meta">
+            <h2>Danang Agung Restu Aji</h2>
+            <p>Computer Science student specializing in IT administration and Cloud Computing. Saat ini bekerja sebagai freelance NLP Research Engineer di lembaga penelitian pemerintah — membangun solusi otomatisasi untuk meningkatkan efisiensi operasional. Berpengalaman di backend, infrastruktur, dan pengembangan model NLP.</p>
+          </div>
+        </aside>
+        <section>
+          <h3>Tentang Saya</h3>
+          <p style="color:var(--muted)">Tuliskan bio singkatmu di sini. Pendidikan, minat, dan jenis proyek yang kamu kerjakan.</p>
+
+          <h3 style="margin-top:18px">Kontak</h3>
+          <p style="color:var(--muted)">danangrestuaji@gmail.com • Manisrenggo, Klaten, Jawa Tengah • 085329446538</p>
+          <p style="color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/profdara" style="color:var(--accent)" target="_blank">linkedin.com/in/profdara</a></p>
+
+          <h3 style="margin-top:18px">Pendidikan</h3>
+          <div style="color:var(--muted)">
+            <p style="margin:0"><strong>Universitas Terbuka</strong> — Bachelor of Arts (BA), Information System</p>
+            <p style="margin:0">Sep 2021 — Mar 2026</p>
+            <p style="margin-top:6px">Activities and societies: <em>UT Insider</em></p>
+
+            <p style="margin-top:8px">As a student of Information Systems at Universitas Terbuka (Indonesia Open University), I gained strong analytical, technical, and managerial skills in IT through a flexible and self-paced learning model. This experience sharpened my discipline, time management, and self-motivation — essential traits for working in dynamic tech environments.</p>
+
+            <p style="margin-top:6px"><strong>Key areas of study included:</strong></p>
+            <ul style="color:var(--muted);margin-top:6px">
+              <li>Systems Analysis and Design</li>
+              <li>Database Systems &amp; SQL</li>
+              <li>Web and Mobile Application Development</li>
+              <li>IT Project Management</li>
+              <li>Artificial Intelligence &amp; Data Mining</li>
+              <li>E-Business and Enterprise Systems</li>
+              <li>Network Security, Backup and Disaster Recovery</li>
+            </ul>
+
+            <p style="margin-top:6px">Familiar tools &amp; technologies: MySQL, PHP, Python, cloud platforms.</p>
+
+            <p style="margin-top:6px"><strong>Final year paper:</strong> "Pengembangan Aplikasi alat Bantu SAR untuk Pendataan Pengungsi Berbasis Face Recognition" (Development of SAR assistance application for refugee data collection utilising Face Recognition). DOI: <a href="https://doi.org/10.13140/RG.2.2.11408.11523" target="_blank" style="color:var(--accent)">10.13140/RG.2.2.11408.11523</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="card page" style="display:none">
+      <h3>Pengalaman</h3>
+      <div style="margin-top:12px">
+        <div class="xp-item">
+          <h4>NLP Research Engineer — Research Project DPPM (Direktorat Penelitian dan Pengabdian Masyarakat) · Freelance</h4>
+          <small>Aug 2025 - Present · Magelang Tengah, Central Java, Indonesia · Remote</small>
+          <p style="color:var(--muted);margin-top:8px">Designed, developed and implemented an end-to-end NLP system using LoRA fine-tuned IndoT5 model for the prototype of national academic Text Simplification & Paraphrase System. Designed a multi-stage paraphrase generation pipeline integrating IndoT5, IndoBERT, and Sentence-BERT for readability improvement. Implemented automatic candidate reranking based on linguistic and semantic features (syntactic simplicity, word concreteness, cohesion). Added custom post-editing and reward-based optimization for selecting the most readable paraphrase per sentence. Achieved significant readability gains (Flesch +25 avg) across 500+ complex scientific sentences.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> IndoBERT · PyTorch · BERT · SBERT · Python · PEFT/LoRA · NLP · Data & ML</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>Google Cloud Arcade Facilitator — Google · Part-time</h4>
+          <small>Jul 2025 - Oct 2025 · Remote</small>
+          <p style="color:var(--muted);margin-top:8px">Guide learners through real-world use cases, troubleshoot implementation challenges, and foster collaborative skill-building with tools like BigQuery, Cloud Run, and Vertex AI. Focus on accessibility and impact, turning complex cloud concepts into enjoyable, inclusive learning journeys that accelerate both individual growth and team adoption of cloud technologies.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> Cloud-Based Machine Learning · Cloud Functions · Cloud Foundations · Cloud Storage · Cloud Infrastructure · Cloud Networks · Cloud Computing</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>AI & IT Solution Specialist — Freelance</h4>
+          <small>Dec 2021 - Aug 2025 · Yogyakarta, Indonesia · Hybrid</small>
+          <p style="color:var(--muted);margin-top:8px">Provided onsite and remote IT & AI solutions, ensuring seamless computer system operation while developing and deploying AI models, including NLP-based solutions. Combined hands-on technical expertise in hardware/software support with advanced AI and data-driven problem solving.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Core responsibilities:</strong></p>
+          <ul style="color:var(--muted);margin-top:6px">
+            <li>Hardware & infrastructure maintenance (install/configure/service desktops, laptops, printers, mobile devices).</li>
+            <li>Software & OS management (install/update/configure applications and operating systems).</li>
+            <li>User & client support (technical assistance and best-practice guidance).</li>
+            <li>Preventive maintenance & optimization (system inspections, performance benchmarking, model evaluation).</li>
+            <li>AI & model development (design, train, test NLP models and integrate into production).</li>
+          </ul>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> Python</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>Coding Camp Facilitator (Intermediate Level) — Coding Camp powered by DBS Foundation · Part-time</h4>
+          <small>Aug 2024 - Sep 2024 · Remote</small>
+          <p style="color:var(--muted);margin-top:8px">Provided mentorship and facilitation to educators, enabling comprehension of course materials and completion of assignments. Delivered hands-on support to ensure participants met course requirements.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Key topics:</strong> HTML forms · CSS Grid · Web Components · Package Managers · Module Bundling · Async JS · Notes App integration with RESTful API</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> CSS · JavaScript · HTML · Node.js · Front-End Development · Program Facilitation</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>Cloud Computing Cohort — Bangkit Academy (led by Google, Tokopedia, Gojek, & Traveloka)</h4>
+          <small>Feb 2024 - Jul 2024 · Indonesia · Remote</small>
+          <p style="color:var(--muted);margin-top:8px">Specialized in mastering cloud computing using Google Cloud Platform (GCP). Gained hands-on experience building scalable, secure solutions: managing infrastructures, deploying applications, and optimizing workloads.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> Back-End Web Development · Python · Cloud Computing · Capstone Project Leadership</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>General Administration — PT. Lajuperdana Indah</h4>
+          <small>Jan 2019 - Sep 2021 · Ogan Komering Ulu Timur, Sumatera Selatan · On-site</small>
+          <p style="color:var(--muted);margin-top:8px">Worked directly under Division Manager to oversee data input, field data analysis, and compile summary reports. Supported Machinery, Transportation, and Heavy Equipment teams with scheduling, reporting, and operational analysis.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> SAP · Microsoft Office · Office Administration · Computer Operations</p>
+        </div>
+
+        <div class="xp-item">
+          <h4>Technical Support Staff — Starline · Part-time</h4>
+          <small>Dec 2015 - Dec 2018 · Sleman, Yogyakarta · On-site</small>
+          <p style="color:var(--muted);margin-top:8px">Provided comprehensive technical support: hardware maintenance, software installation, user support, and on-site preventive maintenance to ensure optimal equipment performance.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Skills:</strong> Python · Hardware Maintenance · User Support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio (new page) -->
+    <section id="portfolio" class="card page" style="display:none">
+      <h3>Portfolio</h3>
+      <p style="color:var(--muted);margin-top:6px">Proyek-proyek terpilih dan demo. Isi halaman ini dengan link ke repositori, demo, dan penjelasan singkat setiap proyek.</p>
+      <div style="margin-top:12px;display:grid;grid-template-columns:1fr;gap:12px">
+        <div class="xp-item">
+          <h4>Contoh Proyek: Paraphrase & Simplification (NLP)</h4>
+          <small>Prototype · IndoT5 + LoRA</small>
+          <p style="color:var(--muted);margin-top:8px">Ringkasan singkat: pipeline multi-stage untuk paraphrase dan simplification, termasuk reranking dan post-processing.</p>
+          <p style="color:var(--muted);margin-top:6px"><strong>Stack:</strong> Python · PyTorch · IndoT5 · SBERT · GCP</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill & Sertifikasi -->
+    <section id="skill" class="card page" style="display:none">
+      <h3>Skill & Sertifikasi — Tech Tree</h3>
+      <p style="color:var(--muted);margin-top:6px">Klik node untuk melihat detail. Contoh: Sertifikat Python → Data Science & Machine Learning.</p>
+      <div class="tree-wrap" style="margin-top:12px">
+        <svg id="skillSvg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+
+      <div id="certifications" class="card" style="margin-top:12px; display:none">
+        <h4>Licenses & Certifications</h4>
+        <div id="certList" style="margin-top:8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px"></div>
+      </div>
+    </section>
+
+    <div id="infoBox" class="info" style="display:none">
+      <h3 id="infoTitle">Title</h3>
+      <p id="infoDesc">Deskripsi singkat sertifikat atau skill.</p>
+      <p id="infoMeta" style="color:var(--muted);font-size:13px;margin-top:8px"></p>
+      <p style="margin-top:8px"><a id="infoLink" href="#" target="_blank" style="color:var(--accent);font-weight:700;text-decoration:none;display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(96,165,250,0.08)">Lihat Sertifikat</a></p>
+    </div>
+
+  </div>
+
+  <script src="skills-data.js"></script>
+  <script src="tree.js"></script>
+  <script>
+    // Navigation (simple SPA behaviour) — small glue to connect to modular tree
+    const nav = document.querySelectorAll('.navlink');
+    const pages = document.querySelectorAll('.page');
+    nav.forEach(a=>a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      const target = a.dataset.target;
+      nav.forEach(n=>n.classList.remove('active'));
+      a.classList.add('active');
+      pages.forEach(p=> p.id === target ? p.style.display = '' : p.style.display = 'none');
+      if(target === 'skill' && window.drawSkillTree) window.drawSkillTree();
+    }));
+
+    // keyboard shortcuts
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === '1') document.querySelector('[data-target="profil"]').click();
+      if(e.key === '2') document.querySelector('[data-target="pengalaman"]').click();
+      if(e.key === '3') document.querySelector('[data-target="skill"]').click();
+    });
+  </script>
+</body>
+</html>
