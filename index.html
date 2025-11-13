@@ -39,7 +39,7 @@
     .xp-item small{color:var(--muted)}
 
     /* Skill Tree */
-    .tree-wrap{height:640px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.0));display:flex;align-items:center;justify-content:center;border-radius:10px}
+    .tree-wrap{height:1000px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.0));display:flex;align-items:center;justify-content:center;border-radius:10px}
     svg{max-width:100%;height:100%;}
 
    .node{cursor:pointer;transition:filter .15s}
@@ -58,6 +58,53 @@
 
     /* responsive */
     @media (max-width:900px){.grid{grid-template-columns:1fr}.info{position:static;margin-top:12px}}
+
+
+    
+    /* ===== Node & SVG styling ===== */
+    svg#skillSvg { width:100%; height:100%; overflow:visible; }
+    .link {
+      stroke: rgba(100,110,120,0.18);
+      stroke-width: 2;
+      fill: none;
+      transition: stroke-width .12s ease, stroke .12s ease, opacity .12s ease;
+    }
+    .link.highlight { stroke: rgba(96,165,250,0.95); stroke-width:3; opacity:1; }
+
+    /* spine connector styling for grouped cert lines */
+    .spine { stroke: rgba(148,163,184,0.16); stroke-width: 3; stroke-linecap: round; }
+    .spine-end { stroke: rgba(148,163,184,0.28); stroke-width: 2; }
+
+    .node { cursor: pointer; }
+    .node .base {
+      stroke: rgba(2,6,23,0.12);
+      stroke-width: 1;
+      filter: drop-shadow(0 6px 14px rgba(2,6,23,0.14));
+    }
+    .hit-area { fill: transparent; }
+
+    .node-label {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-size: 13px;
+      fill: #e6eef6;
+      pointer-events: none;
+    }
+
+    .node .label-bg {
+      fill: rgba(0,0,0,0.36);
+      rx: 8;
+    }
+
+    /* active / hover */
+    .node.active-node circle.base { transform: scale(1.06); }
+    .node:hover circle.base { transform: scale(1.04); }
+    .node circle { transition: transform .14s cubic-bezier(.2,.9,.3,1); transform-origin: center; }
+
+    /* small-screen adjustments */
+    @media (max-width:800px){
+      .node-label { font-size: 11px; }
+    }
+
   </style>
 </head>
 <body>
@@ -93,7 +140,7 @@
           <p style="color:var(--muted)">Tuliskan bio singkatmu di sini. Pendidikan, minat, dan jenis proyek yang kamu kerjakan.</p>
 
           <h3 style="margin-top:18px">Kontak</h3>
-          <p style="color:var(--muted)">danangrestuaji@gmail.com • Manisrenggo, Klaten, Jawa Tengah • 085329446538</p>
+          <p style="color:var(--muted)">danangrestuaji@gmail.com • Manisrenggo, Klaten, Jawa Tengah • 57485</p>
           <p style="color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/profdara" style="color:var(--accent)" target="_blank">linkedin.com/in/profdara</a></p>
 
           <h3 style="margin-top:18px">Pendidikan</h3>
