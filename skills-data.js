@@ -1,57 +1,22 @@
 // File: /mnt/data/skills-data.js
-// Reworked node positions and links so Data Science -> (Python, R) -> AI Fundamental -> AI branches
+// Skill nodes and certificate metadata for the site.
+// Note: layout coordinates were removed (cards now drive the UI), keep semantic fields only.
 const SKILL_NODES = [
-
-  // other roles kept vertically separated on the left
-  {id: 'data_science', label: 'Data Science', x: 100, y: 100, color: '#34d399', desc: 'Data analysis, ML pipelines, model evaluation.', skills: ['Python','Pandas','Machine Learning'], certIds: ['datacamp-ai-fundamentals','datacamp-supervised-sklearn','datacamp-unsupervised','dicoding-ds-terapan','dqlab-r']},
-  {id: 'cloud_engineer', label: 'Cloud Engineer', x: 100, y: 300, color: '#60a5fa', desc: 'Cloud infra, data services, deployment and IaC.', skills: ['GCP','BigQuery','Terraform'], certIds: ['credly-gcpf','dicoding-gc-engineer','google-terraform','google-network','aws-architect']},
-  {id: 'it_support', label: 'IT Support', x: 100, y: 500, color: '#83c5be', desc: 'Helpdesk, troubleshooting, and system admin tasks.', skills: ['Troubleshooting','Linux','Customer Support'], certIds: ['google-it-support','coursera-sysadmin','google-it-security','coursera-networks-security']},
-  {id: 'administration', label: 'Administration', x: 100, y: 700, color: '#94a3b8', desc: 'Office automation, reporting, and coordination.', skills: ['Excel','Power BI','Reporting'], certIds: ['datacamp-excel','datacamp-powerbi','datacamp-data-literacy']},
-  {id: 'fullstack_dev', label: 'Full-stack Developer', x: 100, y: 900, color: '#f59e0b', desc: 'Frontend and backend web application development.', skills: ['JavaScript','Node.js','HTML/CSS'], certIds: ['dicoding-frontend','nodejs-dev','idcamp-frontend']},
-
-
-
-  // clear, ordered sub-nodes (left-to-right progression)
-  {id: 'ds_python', label: 'Python', x: 320, y: 10, color: '#60a5fa', desc: 'Python programming for data processing and ML.', skills: ['Python','pandas'], isSkillNode:true},
-  {id: 'ds_r', label: 'R Fundamental', x: 320, y: 190, color: '#60a5fa', desc: 'R for statistical analysis and data visualisation.', skills: ['R'], isSkillNode:true},
-  {id: 'ai_fundamental', label: 'AI Fundamental', x: 740, y: 140, color: '#f472b6', desc: 'Foundations of AI and model thinking.', skills: ['AI Basics'], isSkillNode:true},
-  {id: 'ai_supervised', label: 'Supervised Learning', x: 920, y: 10, color: '#f59e0b', desc: 'Supervised models and evaluation.', skills: ['Supervised Learning'], isSkillNode:true},
-  {id: 'ai_terapan', label: 'AI Terapan', x: 920, y: 180, color: '#a78bfa', desc: 'Applied AI solutions and deployment.', skills: ['Applied AI'], isSkillNode:true},
-
-
-  // Certificate nodes placed to the far right to avoid crowding
-  {id: 'cert_datacamp_ai_fundamentals', label: 'AI Fundamentals', x: 1140, y: 140, color: '#e6fffa', desc: 'DataCamp - AI Fundamentals', certId: 'datacamp-ai-fundamentals'},
-  {id: 'cert_datacamp_supervised_sklearn', label: 'Supervised (scikit-learn)', x: 1140, y: 100, color: '#e6fffa', desc: 'DataCamp - Supervised Learning with scikit-learn', certId: 'datacamp-supervised-sklearn'},
-  {id: 'cert_datacamp_unsupervised', label: 'Unsupervised Learning', x: 1140, y: 180, color: '#e6fffa', desc: 'DataCamp - Unsupervised Learning in Python', certId: 'datacamp-unsupervised'},
-  {id: 'cert_dicoding_ds_terapan', label: 'Data Science Terapan', x: 1140, y: 220, color: '#e6fffa', desc: 'Dicoding - Data Science Terapan', certId: 'dicoding-ds-terapan'},
-  {id: 'cert_dqlab_r', label: 'R Fundamental', x: 1140, y: 260, color: '#e6fffa', desc: 'DQLab - R Fundamental for Data Science', certId: 'dqlab-r'},
-
-  // Cloud certs (keep grouping to the right of cloud role)
-  {id: 'cert_credly_gcpf', label: 'GCP Foundation', x: 340, y: 320, color: '#eef2ff', desc: 'Credly - Google Cloud Computing Foundation', certId: 'credly-gcpf'},
-  {id: 'cert_dicoding_gc_engineer', label: 'Google Cloud Engineer', x: 460, y: 320, color: '#eef2ff', desc: 'Dicoding - Menjadi Google Cloud Engineer', certId: 'dicoding-gc-engineer'},
-  {id: 'cert_google_terraform', label: 'Terraform on GCP', x: 580, y: 320, color: '#eef2ff', desc: 'Google - Build Infrastructure with Terraform on Google Cloud', certId: 'google-terraform'},
-  {id: 'cert_google_network', label: 'GCP Networking', x: 700, y: 320, color: '#eef2ff', desc: 'Google - Develop your Google Cloud Network', certId: 'google-network'},
-  {id: 'cert_aws_architect', label: 'Architecting on AWS', x: 820, y: 320, color: '#eef2ff', desc: 'Dicoding - Architecting on AWS', certId: 'aws-architect'},
-
-  // Other certs kept as-is (positions tweaked)
-  {id: 'cert_google_it_support', label: 'Google IT Support', x: 340, y: 480, color: '#f0f9ff', desc: 'Google - IT Support Specialization', certId: 'google-it-support'},
-  {id: 'cert_coursera_sysadmin', label: 'System Administration', x: 460, y: 480, color: '#f0f9ff', desc: 'Coursera - System Administration and IT Infrastructure Services', certId: 'coursera-sysadmin'},
-  {id: 'cert_google_it_security', label: 'Google IT Security', x: 580, y: 480, color: '#f0f9ff', desc: 'Google - IT Security', certId: 'google-it-security'},
-  {id: 'cert_coursera_networks_security', label: 'Network Security', x: 700, y: 480, color: '#f0f9ff', desc: 'Coursera - Connect and Protect: Networks and Network Security', certId: 'coursera-networks-security'},
-
-  {id: 'cert_datacamp_excel', label: 'Introduction to Excel', x: 460, y: 660, color: '#fff7ed', desc: 'DataCamp - Introduction to Excel', certId: 'datacamp-excel'},
-  {id: 'cert_datacamp_powerbi', label: 'Introduction to Power BI', x: 580, y: 660, color: '#fff7ed', desc: 'DataCamp - Introduction to Power BI', certId: 'datacamp-powerbi'},
-  {id: 'cert_datacamp_data_literacy', label: 'Data Literacy', x: 700, y: 660, color: '#fff7ed', desc: 'DataCamp - Data Literacy', certId: 'datacamp-data-literacy'},
-
-  {id: 'cert_dicoding_frontend', label: 'Front-End Web Dev', x: 460, y: 840, color: '#fff1f2', desc: 'Dicoding - Fundamental Front-End Web Development', certId: 'dicoding-frontend'},
-  {id: 'cert_nodejs_dev', label: 'Node.js Developer', x: 580, y: 840, color: '#fff1f2', desc: 'Dicoding - Node.js Application Developer', certId: 'nodejs-dev'},
-  {id: 'cert_idcamp_frontend', label: 'Offline Front-End Training', x: 700, y: 840, color: '#fff1f2', desc: 'IDCamp - Offline Training Front-End Web', certId: 'idcamp-frontend'}
+  // Top-level roles used to group certifications in the UI
+  {id: 'data_science', label: 'Data Science', desc: 'Data analysis, ML pipelines, model evaluation.', skills: ['Python','Pandas','Machine Learning'], certIds: ['datacamp-ai-fundamentals','datacamp-supervised-sklearn','datacamp-unsupervised','dicoding-ds-terapan','dqlab-r','datacamp-data-literacy']},
+  {id: 'cloud_engineer', label: 'Cloud Engineer', desc: 'Cloud infra, data services, deployment and IaC.', skills: ['GCP','BigQuery','Terraform'], certIds: ['credly-gcpf','dicoding-gc-engineer','google-terraform','google-network','aws-architect']},
+  {id: 'it_support', label: 'IT Support', desc: 'Helpdesk, troubleshooting, and system admin tasks.', skills: ['Troubleshooting','Linux','Customer Support'], certIds: ['google-it-support','coursera-sysadmin','google-it-security','coursera-networks-security']},
+  {id: 'administration', label: 'Administration', desc: 'Office automation, reporting, and coordination.', skills: ['Excel','Power BI','Reporting'], certIds: ['datacamp-excel','datacamp-powerbi']},
+  {id: 'fullstack_dev', label: 'Full-stack Developer', desc: 'Frontend and backend web application development.', skills: ['JavaScript','Node.js','HTML/CSS'], certIds: ['dicoding-frontend','nodejs-dev','idcamp-frontend']}
 ];
+
+// Links are not used by the simplified card UI but keep an empty array to avoid undefined references
+const SKILL_LINKS = [];
 
 // SKILL_CERTS: a global array used by `tree.js` to render certificate list and link nodes.
 // This maps the certId values used in nodes/links to human-friendly metadata.
 const SKILL_CERTS = [
-  {id:'datacamp-ai-fundamentals', name:'AI Fundamentals', issuer:'DataCamp', issued:'2023', url:'#', skills:['AI Basics','Math']},
+  {id:'datacamp-ai-fundamentals', name:'AI Fundamentals', issuer:'DataCamp', issued:'2023', url:'https://www.datacamp.com/skill-verification/AIF0022429893962', image:'assets/certs/AI fundamentals.png', skills:['AI Basics','Math']},
   {id:'datacamp-supervised-sklearn', name:'Supervised Learning (scikit-learn)', issuer:'DataCamp', issued:'2023', url:'#', skills:['Supervised Learning','scikit-learn']},
   {id:'datacamp-unsupervised', name:'Unsupervised Learning', issuer:'DataCamp', issued:'2023', url:'#', skills:['Clustering','Dimensionality Reduction']},
   {id:'dicoding-ds-terapan', name:'Data Science Terapan', issuer:'Dicoding', issued:'2020', url:'#', skills:['Python','ML Projects']},
@@ -70,7 +35,7 @@ const SKILL_CERTS = [
 
   {id:'datacamp-excel', name:'Introduction to Excel', issuer:'DataCamp', issued:'2020', url:'#', skills:['Excel','Reporting']},
   {id:'datacamp-powerbi', name:'Introduction to Power BI', issuer:'DataCamp', issued:'2021', url:'#', skills:['Power BI','Visualization']},
-  {id:'datacamp-data-literacy', name:'Data Literacy', issuer:'DataCamp', issued:'2020', url:'#', skills:['Data Literacy']},
+  {id:'datacamp-data-literacy', name:'Data Literacy', issuer:'DataCamp', issued:'2020', url:'https://www.datacamp.com/skill-verification/DL0031326339327', image:'assets/certs/Data Literacy.png', skills:['Analytics Fundamentals','Data Visualization','Data Storytelling']},
 
   {id:'dicoding-frontend', name:'Front-End Web Dev', issuer:'Dicoding', issued:'2022', url:'#', skills:['HTML','CSS','JS']},
   {id:'nodejs-dev', name:'Node.js Developer', issuer:'Dicoding', issued:'2022', url:'#', skills:['Node.js','APIs']},

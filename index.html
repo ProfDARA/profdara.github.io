@@ -5,118 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Welcome to Danang's Personal page </title>
   <link rel="icon" href="data:,"></link>
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --accent:#60a5fa; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
-      --maxw:1100px; --pad:20px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; background:linear-gradient(180deg,var(--bg),#071024 120%); color:#e6eef8; min-height:100vh}
-    .wrap{max-width:var(--maxw);margin:30px auto;padding:var(--pad)}
-
-    /* Top nav */
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#38bdf8);display:flex;align-items:center;justify-content:center;color:#02203a;font-weight:700}
-    nav{display:flex;gap:10px}
-    .navlink{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
-    .navlink.active{background:var(--glass);color:var(--accent)}
-
-    /* Card layout */
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px;padding:20px;margin-top:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-
-    /* grid for profile + sidebar */
-    .grid{display:grid;grid-template-columns:280px 1fr;gap:18px}
-    .avatar{width:100%;border-radius:10px;overflow:hidden}
-    .avatar img{width:100%;display:block}
-    .meta{margin-top:12px}
-    .meta h2{margin:0 0 6px}
-    .meta p{color:var(--muted);margin:0}
-
-    /* Experience list */
-    .xp-item{padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:10px}
-    .xp-item h4{margin:0}
-    .xp-item small{color:var(--muted)}
-
-    /* Skill Tree */
-    .tree-wrap{height:1000px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.0));display:flex;align-items:center;justify-content:center;border-radius:10px}
-    svg{max-width:100%;height:100%;}
-
-   .node{cursor:pointer;transition:filter .15s}
-   /* avoid scaling the node on hover to prevent the SVG hit area from moving and causing jitter
-     instead use brightness/stroke changes handled in JS/CSS */
-   .node:hover{filter:brightness(1.08)}
-    .node circle{stroke:#08304a;stroke-width:3}
-    .node text{font-size:13px;text-anchor:middle;fill:#e6eef8}
-    .link{stroke:rgba(255,255,255,0.12);stroke-width:2}
-    .active-node circle{fill:var(--accent)}
-
-    /* info panel */
-    .info{position:fixed;right:20px;bottom:20px;background:#041226;padding:12px;border-radius:10px;min-width:220px;border:1px solid rgba(255,255,255,0.03)}
-    .info h3{margin:0 0 6px}
-    .info p{margin:0;color:var(--muted);font-size:14px}
-
-    /* responsive */
-    @media (max-width:900px){.grid{grid-template-columns:1fr}.info{position:static;margin-top:12px}}
-
-
-    
-    /* ===== Node & SVG styling ===== */
-    svg#skillSvg { width:100%; height:100%; overflow:visible; }
-    .link {
-      stroke: rgba(100,110,120,0.18);
-      stroke-width: 2;
-      fill: none;
-      transition: stroke-width .12s ease, stroke .12s ease, opacity .12s ease;
-    }
-    .link.highlight { stroke: rgba(96,165,250,0.95); stroke-width:3; opacity:1; }
-
-    /* spine connector styling for grouped cert lines */
-    .spine { stroke: rgba(148,163,184,0.16); stroke-width: 3; stroke-linecap: round; }
-    .spine-end { stroke: rgba(148,163,184,0.28); stroke-width: 2; }
-
-    .node { cursor: pointer; }
-    .node .base {
-      stroke: rgba(2,6,23,0.12);
-      stroke-width: 1;
-      filter: drop-shadow(0 6px 14px rgba(2,6,23,0.14));
-    }
-    .hit-area { fill: transparent; }
-
-    .node-label {
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      font-size: 13px;
-      fill: #e6eef6;
-      pointer-events: none;
-    }
-
-    .node .label-bg {
-      fill: rgba(0,0,0,0.36);
-      rx: 8;
-    }
-
-    /* active / hover */
-    .node.active-node circle.base { transform: scale(1.06); }
-    .node:hover circle.base { transform: scale(1.04); }
-    .node circle { transition: transform .14s cubic-bezier(.2,.9,.3,1); transform-origin: center; }
-
-    /* small-screen adjustments */
-    @media (max-width:800px){
-      .node-label { font-size: 11px; }
-    }
-
-    /* Compact certifications list and card preview */
-    .cert-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:8px; max-height:420px; overflow:auto; padding-right:6px }
-    @media (max-width:700px){ .cert-list{ grid-template-columns:1fr } }
-
-    .cert-card{ position:relative; background: rgba(255,255,255,0.02); border-radius:10px; min-height:88px; font-size:13px; overflow:hidden; padding:14px; display:block; box-shadow:0 6px 18px rgba(2,6,23,0.12); }
-    .cert-card .content{ position:relative; z-index:2 }
-    .cert-card .meta{ color:var(--muted); font-size:12px; margin-top:6px }
-    .cert-card .preview{ position:absolute; top:0; right:0; width:50%; height:100%; background-size:cover; background-position:center; transform:translateX(100%); transition:transform .28s cubic-bezier(.2,.9,.3,1); z-index:1 }
-    .cert-card:hover .preview{ transform:translateX(0) }
-    .cert-card .view-link{ display:inline-block; margin-top:8px; color:var(--accent); font-weight:600 }
-
-  </style>
+  <link rel="stylesheet" href="assets/css/skills.css">
 </head>
 <body>
   <div class="wrap">
@@ -259,11 +148,12 @@
       </div>
     </section>
 
-    <!-- Skill & Sertifikasi -->
-    <section id="certifications" class="card" style="margin-top:12px; display:block">
-        <h4>Licenses & Certifications</h4>
+    <!-- Skill & Sertifikasi (moved to its own page/tab) -->
+    <section id="skill" class="card page" style="display:none; margin-top:12px;">
+      <h4>Licenses & Certifications</h4>
+      <div id="certifications">
         <div id="certList" class="cert-list"></div>
-      
+      </div>
     </section>
 
     <div id="infoBox" class="info" style="display:none">
@@ -298,19 +188,26 @@
       // build map from certId -> cert object for quick lookup
       const certById = Object.fromEntries(CERTS.map(c=>[c.id,c]));
 
-      // gather cert ids per role (from SKILL_NODES[].certIds)
+      // Build role -> certId list by scanning SKILL_CERTS and matching SKILL_NODES.certIds.
+      // This ensures the cards are driven by SKILL_CERTS data (not by leftover node-ordering).
       const roleCertIds = {};
       roles.forEach(r=> roleCertIds[r.id] = []);
-      NODES.forEach(n=>{
-        if(n.id && Array.isArray(n.certIds) && roles.some(r=>r.id===n.id)){
-          roleCertIds[n.id] = (n.certIds || []).slice();
-        }
-      });
 
-      // compute 'others' = certs not referenced in roleCertIds
-      const referenced = new Set(Object.values(roleCertIds).flat());
-      const others = CERTS.map(c=>c.id).filter(id=>!referenced.has(id));
-      roleCertIds['others'] = others;
+      // create a quick lookup for node.certIds
+      const nodeById = Object.fromEntries(NODES.map(n=>[n.id,n]));
+
+      CERTS.forEach(cert => {
+        // find first role node that lists this cert
+        let assigned = null;
+        for(const nodeId of Object.keys(nodeById)){
+          const node = nodeById[nodeId];
+          if(node && Array.isArray(node.certIds) && node.certIds.includes(cert.id) && roles.some(r=>r.id===nodeId)){
+            assigned = nodeId; break;
+          }
+        }
+        if(assigned && roleCertIds[assigned]) roleCertIds[assigned].push(cert.id);
+        else roleCertIds['others'].push(cert.id);
+      });
 
       // create tab bar
       const tabBar = document.createElement('div'); tabBar.style.display='flex'; tabBar.style.gap='8px'; tabBar.style.marginBottom='10px';
@@ -334,7 +231,8 @@
       // render function for a role
       function renderRole(roleId){
         certListEl.innerHTML = '';
-        const ids = Array.isArray(roleCertIds[roleId]) ? roleCertIds[roleId].slice(0,5) : [];
+        // show all certs for the role (driven by SKILL_CERTS ordering)
+        const ids = Array.isArray(roleCertIds[roleId]) ? roleCertIds[roleId].slice() : [];
         ids.forEach(id=>{
           const c = certById[id];
           if(!c) return;
