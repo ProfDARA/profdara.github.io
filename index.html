@@ -105,6 +105,17 @@
       .node-label { font-size: 11px; }
     }
 
+    /* Compact certifications list and card preview */
+    .cert-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:8px; max-height:420px; overflow:auto; padding-right:6px }
+    @media (max-width:700px){ .cert-list{ grid-template-columns:1fr } }
+
+    .cert-card{ position:relative; background: rgba(255,255,255,0.02); border-radius:10px; min-height:88px; font-size:13px; overflow:hidden; padding:14px; display:block; box-shadow:0 6px 18px rgba(2,6,23,0.12); }
+    .cert-card .content{ position:relative; z-index:2 }
+    .cert-card .meta{ color:var(--muted); font-size:12px; margin-top:6px }
+    .cert-card .preview{ position:absolute; top:0; right:0; width:50%; height:100%; background-size:cover; background-position:center; transform:translateX(100%); transition:transform .28s cubic-bezier(.2,.9,.3,1); z-index:1 }
+    .cert-card:hover .preview{ transform:translateX(0) }
+    .cert-card .view-link{ display:inline-block; margin-top:8px; color:var(--accent); font-weight:600 }
+
   </style>
 </head>
 <body>
@@ -249,17 +260,10 @@
     </section>
 
     <!-- Skill & Sertifikasi -->
-    <section id="skill" class="card page" style="display:none">
-      <h3>Skill & Sertifikasi — Tech Tree</h3>
-      <p style="color:var(--muted);margin-top:6px">Klik node untuk melihat detail. Contoh: Sertifikat Python → Data Science & Machine Learning.</p>
-      <div class="tree-wrap" style="margin-top:12px">
-        <svg id="skillSvg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet"></svg>
-      </div>
-
-      <div id="certifications" class="card" style="margin-top:12px; display:none">
+    <section id="certifications" class="card" style="margin-top:12px; display:block">
         <h4>Licenses & Certifications</h4>
-        <div id="certList" style="margin-top:8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px"></div>
-      </div>
+        <div id="certList" class="cert-list"></div>
+      
     </section>
 
     <div id="infoBox" class="info" style="display:none">
@@ -272,9 +276,93 @@
   </div>
 
   <script src="skills-data.js"></script>
-  <script src="tree.js"></script>
   <script>
-    // Navigation (simple SPA behaviour) — small glue to connect to modular tree
+    // Render certifications into 6 tabs (5 role tabs + Others). Each tab shows up to 5 items.
+    (function renderCertTabs(){
+      const certListEl = document.getElementById('certList');
+      const certContainer = document.getElementById('certifications');
+      if(!certListEl || !certContainer) return;
+
+      const CERTS = (typeof SKILL_CERTS !== 'undefined' && Array.isArray(SKILL_CERTS)) ? SKILL_CERTS : (Array.isArray(window.SKILL_CERTS) ? window.SKILL_CERTS : []);
+      const NODES = (typeof SKILL_NODES !== 'undefined' && Array.isArray(SKILL_NODES)) ? SKILL_NODES : (Array.isArray(window.SKILL_NODES) ? window.SKILL_NODES : []);
+
+      const roles = [
+        {id:'data_science', label:'Data Science'},
+        {id:'cloud_engineer', label:'Cloud Engineer'},
+        {id:'it_support', label:'IT Support'},
+        {id:'fullstack_dev', label:'Full-stack Dev'},
+        {id:'administration', label:'Administration'},
+        {id:'others', label:'Others'}
+      ];
+
+      // build map from certId -> cert object for quick lookup
+      const certById = Object.fromEntries(CERTS.map(c=>[c.id,c]));
+
+      // gather cert ids per role (from SKILL_NODES[].certIds)
+      const roleCertIds = {};
+      roles.forEach(r=> roleCertIds[r.id] = []);
+      NODES.forEach(n=>{
+        if(n.id && Array.isArray(n.certIds) && roles.some(r=>r.id===n.id)){
+          roleCertIds[n.id] = (n.certIds || []).slice();
+        }
+      });
+
+      // compute 'others' = certs not referenced in roleCertIds
+      const referenced = new Set(Object.values(roleCertIds).flat());
+      const others = CERTS.map(c=>c.id).filter(id=>!referenced.has(id));
+      roleCertIds['others'] = others;
+
+      // create tab bar
+      const tabBar = document.createElement('div'); tabBar.style.display='flex'; tabBar.style.gap='8px'; tabBar.style.marginBottom='10px';
+      roles.forEach((r, idx)=>{
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.textContent = r.label;
+        btn.dataset.role = r.id;
+        btn.style.padding = '6px 10px'; btn.style.borderRadius = '8px'; btn.style.background = 'transparent'; btn.style.border='1px solid rgba(255,255,255,0.04)'; btn.style.color='var(--muted)';
+        if(idx===0){ btn.classList.add('active'); btn.style.background='var(--glass)'; btn.style.color='var(--accent)'; }
+        btn.addEventListener('click', ()=>{
+          tabBar.querySelectorAll('button').forEach(b=>{ b.classList.remove('active'); b.style.background='transparent'; b.style.color='var(--muted)'; });
+          btn.classList.add('active'); btn.style.background='var(--glass)'; btn.style.color='var(--accent)';
+          renderRole(r.id);
+        });
+        tabBar.appendChild(btn);
+      });
+      // insert tabBar above certList
+      certContainer.insertBefore(tabBar, certListEl);
+
+      // render function for a role
+      function renderRole(roleId){
+        certListEl.innerHTML = '';
+        const ids = Array.isArray(roleCertIds[roleId]) ? roleCertIds[roleId].slice(0,5) : [];
+        ids.forEach(id=>{
+          const c = certById[id];
+          if(!c) return;
+          const card = document.createElement('div'); card.className = 'cert-card';
+          const content = document.createElement('div'); content.className = 'content';
+          const h = document.createElement('div'); h.style.fontWeight='700'; h.textContent = c.name || '';
+          const meta = document.createElement('div'); meta.className='meta'; meta.textContent = (c.issuer||'') + ' • ' + (c.issued||'');
+          const skills = document.createElement('div'); skills.style.marginTop='6px'; skills.style.color='var(--muted)'; skills.style.fontSize='13px'; skills.textContent = (c.skills||[]).join(' · ');
+          content.appendChild(h); content.appendChild(meta); content.appendChild(skills);
+          if(c.url){ const a = document.createElement('a'); a.href=c.url; a.target='_blank'; a.textContent='View'; a.className='view-link'; content.appendChild(a); }
+          card.appendChild(content);
+
+          // preview image: use explicit image url if provided, otherwise fallback to a seeded picsum photo
+          const imgUrl = c.image || ('https://picsum.photos/seed/' + encodeURIComponent(c.id) + '/600/360');
+          const preview = document.createElement('div'); preview.className = 'preview'; preview.style.backgroundImage = 'url("'+imgUrl+'")';
+          card.appendChild(preview);
+
+          certListEl.appendChild(card);
+        });
+        // If no items, show placeholder
+        if(ids.length===0){ const p = document.createElement('div'); p.style.color='var(--muted)'; p.textContent='No items available.'; certListEl.appendChild(p); }
+      }
+
+      // initial render first tab
+      renderRole(roles[0].id);
+    })();
+
+    // Navigation (simple SPA behaviour)
     const nav = document.querySelectorAll('.navlink');
     const pages = document.querySelectorAll('.page');
     nav.forEach(a=>a.addEventListener('click', (e)=>{
@@ -283,7 +371,6 @@
       nav.forEach(n=>n.classList.remove('active'));
       a.classList.add('active');
       pages.forEach(p=> p.id === target ? p.style.display = '' : p.style.display = 'none');
-      if(target === 'skill' && window.drawSkillTree) window.drawSkillTree();
     }));
 
     // keyboard shortcuts

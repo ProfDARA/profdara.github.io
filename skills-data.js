@@ -48,53 +48,6 @@ const SKILL_NODES = [
   {id: 'cert_idcamp_frontend', label: 'Offline Front-End Training', x: 700, y: 840, color: '#fff1f2', desc: 'IDCamp - Offline Training Front-End Web', certId: 'idcamp-frontend'}
 ];
 
-// Links: make python & R point to AI Fundamental (both ways conceptually by showing ai_fundamental as next node)
-const SKILL_LINKS = [
-  // role progression (vertical on left)
-  // Data Science branching -> Python, R
-  {source: 'data_science', target: 'ds_python'},
-  {source: 'data_science', target: 'ds_r'},
-
-  // both Python and R progress into AI fundamentals
-  {source: 'ds_python', target: 'ai_fundamental'},
-  {source: 'ds_r', target: 'ai_fundamental'},
-
-  // AI Fundamental branches
-  {source: 'ai_fundamental', target: 'ai_supervised'},
-  {source: 'ai_fundamental', target: 'ai_terapan'},
-
-  // role -> certificate links for data science (kept, but positioned so they don't overlap)
-  {source: 'ai_fundamental', target: 'cert_datacamp_ai_fundamentals'},
-  {source: 'ai_supervised', target: 'cert_datacamp_supervised_sklearn'},
-  {source: 'ai_terapan', target: 'cert_datacamp_unsupervised'},
-  {source: 'ai_fundamental', target: 'cert_dicoding_ds_terapan'},
-  {source: 'ai_fundamental', target: 'cert_dqlab_r'},
-
-  // cloud certs
-  {source: 'cloud_engineer', target: 'cert_credly_gcpf'},
-  {source: 'cloud_engineer', target: 'cert_dicoding_gc_engineer'},
-  {source: 'cloud_engineer', target: 'cert_google_terraform'},
-  {source: 'cloud_engineer', target: 'cert_google_network'},
-  {source: 'cloud_engineer', target: 'cert_aws_architect'},
-
-  // it support certs
-  {source: 'it_support', target: 'cert_google_it_support'},
-  {source: 'cert_google_it_support', target: 'cert_google_it_security'},
-  {source: 'cert_google_it_security', target: 'cert_coursera_networks_security'},
-  {source: 'cert_coursera_networks_security', target: 'cert_coursera_sysadmin'},
-
-
-  // admin certs
-  {source: 'administration', target: 'cert_datacamp_excel'},
-  {source: 'administration', target: 'cert_datacamp_powerbi'},
-  {source: 'administration', target: 'cert_datacamp_data_literacy'},
-
-  // fullstack certs
-  {source: 'fullstack_dev', target: 'cert_dicoding_frontend'},
-  {source: 'fullstack_dev', target: 'cert_nodejs_dev'},
-  {source: 'fullstack_dev', target: 'cert_idcamp_frontend'}
-];
-
 // SKILL_CERTS: a global array used by `tree.js` to render certificate list and link nodes.
 // This maps the certId values used in nodes/links to human-friendly metadata.
 const SKILL_CERTS = [
@@ -125,6 +78,10 @@ const SKILL_CERTS = [
 ];
 
 // expose to window for compatibility with tree.js which reads window.SKILL_CERTS
-if(typeof window !== 'undefined') window.SKILL_CERTS = SKILL_CERTS;
+if(typeof window !== 'undefined'){
+  window.SKILL_CERTS = SKILL_CERTS;
+  window.SKILL_NODES = SKILL_NODES;
+  window.SKILL_LINKS = SKILL_LINKS;
+}
 
 
