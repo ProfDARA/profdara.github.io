@@ -3,18 +3,46 @@
 // Note: layout coordinates were removed (cards now drive the UI), keep semantic fields only.
 const SKILL_NODES = [
   // Top-level roles used to group certifications in the UI
-  {id: 'data_science', label: 'Data Science', desc: 'Data analysis, ML pipelines, model evaluation.', skills: ['Python','Pandas','Machine Learning'], certIds: ['datacamp-ai-fundamentals','datacamp-supervised-sklearn','datacamp-unsupervised','dicoding-ds-terapan','dqlab-r','datacamp-data-literacy','datacamp-understanding-data-engineering']},
-  {id: 'cloud_engineer', label: 'Cloud Engineer', desc: 'Cloud infra, data services, deployment and IaC.', skills: ['GCP','BigQuery','Terraform'], certIds: ['credly-gcpf','dicoding-gc-engineer','google-terraform','google-network','aws-architect']},
-  {id: 'it_support', label: 'IT Support', desc: 'Helpdesk, troubleshooting, and system admin tasks.', skills: ['Troubleshooting','Linux','Customer Support'], certIds: ['google-it-support','coursera-sysadmin','google-it-security','coursera-networks-security']},
-  {id: 'administration', label: 'Administration', desc: 'Office automation, reporting, and coordination.', skills: ['Excel','Power BI','Reporting'], certIds: ['datacamp-excel','datacamp-powerbi']},
-  {id: 'fullstack_dev', label: 'Full-stack Developer', desc: 'Frontend and backend web application development.', skills: ['JavaScript','Node.js','HTML/CSS'], certIds: ['dicoding-frontend','nodejs-dev','idcamp-frontend']}
-];
+  {id: 'data_science', label: 'Data Science', desc: 'Data analysis, ML pipelines, model evaluation.', skills: ['Python','Pandas','Machine Learning'], 
+    certIds: ['datacamp-ai-fundamentals',
+      'datacamp-supervised-sklearn',
+      'datacamp-unsupervised',
+      'dicoding-ds-terapan',
+      'dqlab-r',
+      'datacamp-data-literacy',
+      'datacamp-understanding-data-engineering']},
 
-// Links are not used by the simplified card UI but keep an empty array to avoid undefined references
+
+  {id: 'cloud_engineer', label: 'Cloud Engineer', desc: 'Cloud infra, data services, deployment and IaC.', skills: ['GCP','BigQuery','Terraform'], 
+    certIds: ['credly-gcpf',
+      'dicoding-gc-engineer',
+      'google-terraform',
+      'google-network',
+      'aws-architect']},
+
+
+  {id: 'it_support', label: 'IT Support', desc: 'Helpdesk, troubleshooting, and system admin tasks.', skills: ['Troubleshooting','Linux','Customer Support'], 
+    certIds: ['google-it-support',
+      'coursera-sysadmin',
+      'google-it-security',
+      'coursera-networks-security']},
+
+
+  {id: 'administration', label: 'Administration', desc: 'Office automation, reporting, and coordination.', skills: ['Excel','Power BI','Reporting'], 
+    certIds: ['datacamp-excel',
+      'datacamp-powerbi']},
+
+
+  {id: 'fullstack_dev', label: 'Full-stack Developer', desc: 'Frontend and backend web application development.', skills: ['JavaScript','Node.js','HTML/CSS'], 
+    certIds: ['dicoding-frontend',
+      'nodejs-dev',
+      'idcamp-frontend']}
+];
 const SKILL_LINKS = [];
 
-// SKILL_CERTS: a global array used by `tree.js` to render certificate list and link nodes.
-// This maps the certId values used in nodes/links to human-friendly metadata.
+
+
+
 const SKILL_CERTS = [
   {id:'datacamp-ai-fundamentals', name:'AI Fundamentals', issuer:'DataCamp', issued:'2025', url:'https://www.datacamp.com/skill-verification/AIF0022429893962', image:'assets/certs/AI fundamentals.png', skills:['AI Basics','Generative AI'], desc: 'AI Fundamentals, Generative AI, ethical Generative AI'},
   {id:'datacamp-supervised-sklearn', name:'Supervised Learning (scikit-learn)', issuer:'DataCamp', issued:'2023', url:'#', skills:['Supervised Learning','scikit-learn']},
