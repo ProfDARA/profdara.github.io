@@ -1,0 +1,47 @@
+Category;Cert Name;Skills description;Verification URL;Date Acquired;Picture File Name
+Data Science;Data Literacy;"Analytics Fundamentals, 
+Data Visualization, 
+Data Storytelling";https://www.datacamp.com/skill-verification/DL0031326339327;Nov-25;Data Literacy.png
+Data Science;AI Fundamentals;AI Fundamentals, Generative AI, ethical Generative AI;https://www.datacamp.com/skill-verification/AIF0022429893962;Nov-25;AI fundamentals.png
+Data Science;Understanding Data Science;"Define core data science concepts, workflows, roles, and commonly used tools.
+Identify data types, sources, and storage methods used in data-driven organizations.
+Evaluate real-world applications of data science across industries and use cases.
+Assess the purpose of data pipelines, exploration, and visualization in data workflows.
+Recognize how modeling techniques like A/B testing and machine learning inform decisions.";https://www.datacamp.com/skill-verification/UDS0028710042472;Nov-25;Understanding Data Science.png
+Data Science;AI Ethics;"Define data and AI ethics, and explain their importance in real-world applications.
+
+Differentiate ethical principles from laws, regulations, and societal norms in the context of data use.
+
+Identify ethical risks and responsibilities across the entire data lifecycle.
+
+Apply principles of transparency, consent, and ownership to support ethical AI practices.
+
+Evaluate ethical implications of data sharing, bias, and AI impact on society and sustainability.";https://www.datacamp.com/skill-verification/AIE0028194915592;Nov-25;AI Ethics.png
+Administration;Introduction to Excel;"Identify Excel?s core components, including cells, worksheets, tables, formulas, and charts.
+
+Define and apply aggregation functions such as SUM, AVERAGE, and COUNT to analyze worksheet data.
+
+Recognize methods to format, manage, and validate data using named ranges, conditional formatting, and data validation rules.
+
+Differentiate between visualization options (e.g., bar, line, sunburst charts) and assess which is most appropriate for a dataset.
+
+Evaluate the role of formulas, cell references, and arithmetic operations in performing accurate calculations.";https://www.datacamp.com/skill-verification/ITE0011344223676;Nov-25;Excel.png
+Administration;Introduction to Power BI;"Identify the differences between Power BI Free, Pro, and Premium versions and their appropriate use cases.
+
+Recognize Power BI?s main components, including report view, data view, and relationship view.
+
+Differentiate between DAX and M code when creating calculated columns, tables, and measures.
+
+Assess visualization techniques such as hierarchies, drill-downs, filters, and slicers to enhance reports.
+
+Evaluate deployment options by recognizing Power BI Service features, workspaces, and dashboards.";https://www.datacamp.com/skill-verification/ITPB0018227290634;Nov-25;Power BI.png
+others;Understanding ChatGPT;"Define ChatGPT and explain how it differs from traditional chatbots and AI tools.
+
+Identify ChatGPT?s strengths, limitations, and ethical considerations in practical use.
+
+Apply prompt-writing techniques to generate accurate and useful ChatGPT responses.
+
+Evaluate ChatGPT?s potential for business workflows and identify suitable use cases across industries.
+
+Recognize ChatGPT?s evolving capabilities, privacy implications, and ownership concerns in generative AI.";https://www.datacamp.com/skill-verification/UCG0013653598785;Nov-25;chatGPT.png
+Data Science;Understanding Data Engineering;data engineer?s core responsibilities, how they differ from data scientists, and facilitate the flow of data through an organization. Through hands-on exercises you?ll follow Spotflix, a fictional music streaming company, to understand how their data engineers collect, clean, and catalog their data. By the end of the course, you?ll understand what your company's data engineers do, be ready to have a conversation with a data engineer, and have a solid foundation to start your own data engineer journey.;https://www.datacamp.com/skill-verification/UDE0014688431999;Nov-25;Data Engineering.png
