@@ -67,8 +67,8 @@ const SKILL_LINKS = [
   {source: 'ai_fundamental', target: 'cert_datacamp_ai_fundamentals'},
   {source: 'ai_supervised', target: 'cert_datacamp_supervised_sklearn'},
   {source: 'ai_terapan', target: 'cert_datacamp_unsupervised'},
-  {source: 'data_science', target: 'cert_dicoding_ds_terapan'},
-  {source: 'data_science', target: 'cert_dqlab_r'},
+  {source: 'ai_fundamental', target: 'cert_dicoding_ds_terapan'},
+  {source: 'ai_fundamental', target: 'cert_dqlab_r'},
 
   // cloud certs
   {source: 'cloud_engineer', target: 'cert_credly_gcpf'},
@@ -79,9 +79,10 @@ const SKILL_LINKS = [
 
   // it support certs
   {source: 'it_support', target: 'cert_google_it_support'},
-  {source: 'it_support', target: 'cert_coursera_sysadmin'},
-  {source: 'it_support', target: 'cert_google_it_security'},
-  {source: 'it_support', target: 'cert_coursera_networks_security'},
+  {source: 'cert_google_it_support', target: 'cert_google_it_security'},
+  {source: 'cert_google_it_security', target: 'cert_coursera_networks_security'},
+  {source: 'cert_coursera_networks_security', target: 'cert_coursera_sysadmin'},
+
 
   // admin certs
   {source: 'administration', target: 'cert_datacamp_excel'},
