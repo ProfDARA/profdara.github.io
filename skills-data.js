@@ -71,7 +71,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/DL0031326339327',
-    image: 'assets/certs/Data Literacy.png',
+    image: 'assets/certs/Data Literacy.PNG',
     skills: ['Analytics fundamentals', 'Data visualization', 'Data storytelling'],
     desc: 'Analytics fundamentals; creating effective visualizations; communicating insights through data storytelling.'
   },
@@ -81,7 +81,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/AIF0022429893962',
-    image: 'assets/certs/AI fundamentals.png',
+    image: 'assets/certs/AI fundamentals.PNG',
     skills: ['AI basics', 'Generative AI', 'Ethical generative AI'],
     desc: 'Foundational AI concepts; overview of generative models; high-level ethical considerations for AI.'
   },
@@ -91,7 +91,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UDS0028710042472',
-    image: 'assets/certs/Understanding Data Science.png',
+    image: 'assets/certs/Understanding Data Science.PNG',
     skills: ['Data science concepts', 'Workflows', 'Data types & storage', 'Modeling basics'],
     desc: 'Core data science concepts and workflows; data types and storage; roles and model usage (A/B testing, basic ML) in decision-making.'
   },
@@ -101,7 +101,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/AIE0028194915592',
-    image: 'assets/certs/AI Ethics.png',
+    image: 'assets/certs/AI Ethics.PNG',
     skills: ['Ethics frameworks', 'Bias & fairness', 'Transparency', 'Consent'],
     desc: 'Principles of data & AI ethics; identify risks across data lifecycle; considerations for bias, transparency and governance.'
   },
@@ -111,7 +111,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UDE0014688431999',
-    image: 'assets/certs/Data Engineering.png',
+    image: 'assets/certs/Data Engineering.PNG',
     skills: ['Data pipelines', 'ETL', 'Data cleaning', 'Cataloging'],
     desc: 'Responsibilities of data engineers; fundamentals of pipelines, cleaning and cataloging; collaboration points with data scientists.'
   },
@@ -121,7 +121,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/ITE0011344223676',
-    image: 'assets/certs/Excel.png',
+    image: 'assets/certs/Excel.PNG',
     skills: ['Core Excel functions', 'Formulas', 'Charts', 'Data validation'],
     desc: 'Cells/tables/formulas; aggregation (SUM/AVERAGE/COUNT); formatting and validation; selecting appropriate charts for datasets.'
   },
@@ -131,7 +131,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/ITPB0018227290634',
-    image: 'assets/certs/Power BI.png',
+    image: 'assets/certs/Power BI.PNG',
     skills: ['Power BI reports', 'DAX basics', 'Visuals', 'Deployment'],
     desc: 'Power BI components (report/data/relationship views); DAX vs M basics; visual techniques (hierarchies, drilldowns); deployment via Power BI Service.'
   },
@@ -141,7 +141,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UCG0013653598785',
-    image: 'assets/certs/chatGPT.png',
+    image: 'assets/certs/chatGPT.PNG',
     skills: ['ChatGPT basics', 'Prompting techniques', 'Use cases', 'Ethics overview'],
     desc: 'How ChatGPT differs from classic chatbots; practical prompting techniques; core use cases and ethical/privacy considerations.'
   },
@@ -385,7 +385,7 @@ const SKILL_CERTS = [
     issuer: 'KADIN / IDCamp',
     issued: '2023-05',
     url: '',
-    image: 'assets/certs/offline training.png',
+    image: 'assets/certs/offline training.PNG',
     skills: ['HTML', 'CSS', 'JavaScript', 'Frameworks (React/Vue)', 'UI/UX basics'],
     desc: 'Intensive offline front-end training: core HTML/CSS/JS, modern frameworks and UI/UX considerations for industry readiness.'
   },
