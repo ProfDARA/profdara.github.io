@@ -1,14 +1,14 @@
-Category;Cert Name;Skills description;Verification URL;Date Acquired;Picture File Name
-Data Science;Data Literacy;"Analytics Fundamentals, 
+Category;Issuer;Cert Name;Skills description;Verification URL;Date Acquired;Picture File Name
+Data Science;DataCamp;Data Literacy;"Analytics Fundamentals, 
 Data Visualization, 
 Data Storytelling";https://www.datacamp.com/skill-verification/DL0031326339327;Nov-25;Data Literacy.png
-Data Science;AI Fundamentals;AI Fundamentals, Generative AI, ethical Generative AI;https://www.datacamp.com/skill-verification/AIF0022429893962;Nov-25;AI fundamentals.png
-Data Science;Understanding Data Science;"Define core data science concepts, workflows, roles, and commonly used tools.
+Data Science;DataCamp;AI Fundamentals;AI Fundamentals, Generative AI, ethical Generative AI;https://www.datacamp.com/skill-verification/AIF0022429893962;Nov-25;AI fundamentals.png
+Data Science;DataCamp;Understanding Data Science;"Define core data science concepts, workflows, roles, and commonly used tools.
 Identify data types, sources, and storage methods used in data-driven organizations.
 Evaluate real-world applications of data science across industries and use cases.
 Assess the purpose of data pipelines, exploration, and visualization in data workflows.
 Recognize how modeling techniques like A/B testing and machine learning inform decisions.";https://www.datacamp.com/skill-verification/UDS0028710042472;Nov-25;Understanding Data Science.png
-Data Science;AI Ethics;"Define data and AI ethics, and explain their importance in real-world applications.
+Data Science;DataCamp;AI Ethics;"Define data and AI ethics, and explain their importance in real-world applications.
 
 Differentiate ethical principles from laws, regulations, and societal norms in the context of data use.
 
@@ -17,7 +17,7 @@ Identify ethical risks and responsibilities across the entire data lifecycle.
 Apply principles of transparency, consent, and ownership to support ethical AI practices.
 
 Evaluate ethical implications of data sharing, bias, and AI impact on society and sustainability.";https://www.datacamp.com/skill-verification/AIE0028194915592;Nov-25;AI Ethics.png
-Administration;Introduction to Excel;"Identify Excel?s core components, including cells, worksheets, tables, formulas, and charts.
+Administration;DataCamp;Introduction to Excel;"Identify Excel’s core components, including cells, worksheets, tables, formulas, and charts.
 
 Define and apply aggregation functions such as SUM, AVERAGE, and COUNT to analyze worksheet data.
 
@@ -26,22 +26,228 @@ Recognize methods to format, manage, and validate data using named ranges, condi
 Differentiate between visualization options (e.g., bar, line, sunburst charts) and assess which is most appropriate for a dataset.
 
 Evaluate the role of formulas, cell references, and arithmetic operations in performing accurate calculations.";https://www.datacamp.com/skill-verification/ITE0011344223676;Nov-25;Excel.png
-Administration;Introduction to Power BI;"Identify the differences between Power BI Free, Pro, and Premium versions and their appropriate use cases.
+Administration;DataCamp;Introduction to Power BI;"Identify the differences between Power BI Free, Pro, and Premium versions and their appropriate use cases.
 
-Recognize Power BI?s main components, including report view, data view, and relationship view.
+Recognize Power BI’s main components, including report view, data view, and relationship view.
 
 Differentiate between DAX and M code when creating calculated columns, tables, and measures.
 
 Assess visualization techniques such as hierarchies, drill-downs, filters, and slicers to enhance reports.
 
 Evaluate deployment options by recognizing Power BI Service features, workspaces, and dashboards.";https://www.datacamp.com/skill-verification/ITPB0018227290634;Nov-25;Power BI.png
-others;Understanding ChatGPT;"Define ChatGPT and explain how it differs from traditional chatbots and AI tools.
+others;DataCamp;Understanding ChatGPT;"Define ChatGPT and explain how it differs from traditional chatbots and AI tools.
 
-Identify ChatGPT?s strengths, limitations, and ethical considerations in practical use.
+Identify ChatGPT’s strengths, limitations, and ethical considerations in practical use.
 
 Apply prompt-writing techniques to generate accurate and useful ChatGPT responses.
 
-Evaluate ChatGPT?s potential for business workflows and identify suitable use cases across industries.
+Evaluate ChatGPT’s potential for business workflows and identify suitable use cases across industries.
 
-Recognize ChatGPT?s evolving capabilities, privacy implications, and ownership concerns in generative AI.";https://www.datacamp.com/skill-verification/UCG0013653598785;Nov-25;chatGPT.png
-Data Science;Understanding Data Engineering;data engineer?s core responsibilities, how they differ from data scientists, and facilitate the flow of data through an organization. Through hands-on exercises you?ll follow Spotflix, a fictional music streaming company, to understand how their data engineers collect, clean, and catalog their data. By the end of the course, you?ll understand what your company's data engineers do, be ready to have a conversation with a data engineer, and have a solid foundation to start your own data engineer journey.;https://www.datacamp.com/skill-verification/UDE0014688431999;Nov-25;Data Engineering.png
+Recognize ChatGPT’s evolving capabilities, privacy implications, and ownership concerns in generative AI.";https://www.datacamp.com/skill-verification/UCG0013653598785;Nov-25;chatGPT.png
+Data Science;DataCamp;Understanding Data Engineering;data engineer’s core responsibilities, how they differ from data scientists, and facilitate the flow of data through an organization. Through hands-on exercises you’ll follow Spotflix, a fictional music streaming company, to understand how their data engineers collect, clean, and catalog their data. By the end of the course, you’ll understand what your company's data engineers do, be ready to have a conversation with a data engineer, and have a solid foundation to start your own data engineer journey.;https://www.datacamp.com/skill-verification/UDE0014688431999;Nov-25;Data Engineering.png
+Data Science;Dicoding;Penerapan Data Science;"Manajemen Proyek Data Science: menjelaskan tantangan dan teknik dalam mengolah proyek data science (2 Jam 10 Menit). 
+Keterampilan Teknis Data Scientist: mengidentifikasi keterampilan teknis yang dibutuhkan untuk menjadi seorang data scientist yang andal (4 Jam 20 Menit). 
+Studi Kasus Membuat Business Dashboard: membangun sebuah business dashboard sebagai wadah untuk mengomunikasikan data (4 Jam). 
+Studi Kasus Customer Segmentation Analysis: menganalisis segmentasi pelanggan untuk menghasilkan strategi bisnis yang lebih baik (4 Jam). 
+Studi Kasus Credit Scoring Analytics: membangun model machine learning untuk mengidentifikasi risiko kredit untuk mencegah kredit macet (5 Jam 10 Menit). 
+Pengolahan Big Data dengan PySpark: menggunakan PySpark untuk mengolah Big Data secara efisien (3 Jam 40 Menit). 
+Implementasi Proyek Data Science dalam Environment Cloud: membangun proyek data science dalam environment cloud (4 Jam 10 Menit).";https://www.dicoding.com/certificates/1OP82Q28LPQK;Jun-25;Data Science.png
+Data Science;Dicoding;Fundamental Deep Learning;"Pengenalan Deep Learning: Menggali lebih dalam tentang konsep deep learning dan penggunaan neural network yang lebih kompleks untuk mempelajari representasi data yang mendalam. (3 jam 55 menit)
+Neural Network dengan Tensorflow dan Keras: Mempelajari langkah-langkah praktis dalam membuat dan melatih model neural network menggunakan berbagai platform dan library terkemuka. (5 jam 25 menit)
+Natural Language Processing: Mengimplementasikan langkah-langkah praktis dalam proyek NLP menggunakan TensorFlow, termasuk pemrosesan teks, pelabelan data, dan pembuatan model untuk tugas seperti klasifikasi teks atau analisis sentimen. (7 jam 10 menit)
+Time Series: Belajar tentang pembuatan model deep learning untuk analisis time series, termasuk teknik seperti LSTM (Long Short-Term Memory) dan RNN (Recurrent Neural Networks). (4 jam 40 menit)
+Image Classification: Mendemonstrasikan cara membangun dan melatih model deep learning untuk klasifikasi gambar, termasuk teknik preprocessing dan evaluasi model. (7 jam 30 menit)
+Recommendation System: Mengulas berbagai jenis sistem rekomendasi dan cara mengimplementasikannya menggunakan deep learning untuk memberikan rekomendasi yang lebih personal dan akurat. (3 jam 35 menit)
+Reinforcement Learning: Mempertajam pemahaman mendalam tentang konsep reinforcement learning, termasuk algoritma seperti Markov Model dan Q-learning, serta aplikasi dalam pengambilan keputusan yang adaptif. (3 jam 45 menit)
+Konversi Model Machine Learning: Membahas strategi dan teknik untuk mendeploy dan mengevaluasi model machine learning yang telah dibangun pada berbagai platform dan lingkungan. (9 jam 35 menit)
+The Game Changer: Generative AI: Menguraikan konsep generative AI dan menunjukkan contoh penerapannya dalam pembangkitan konten baru, seperti gambar, teks, dan multimodal. (5 jam 25 menit)";https://www.dicoding.com/certificates/2VX3KG2RJXYQ;Jun-25;Deep Learning.png
+Data Science;Dicoding;Fundamental Data Processing;"Software Engineering dengan Python: Mengimplementasikan praktik rekayasa perangkat lunak menggunakan bahasa pemrograman Python. (8 Jam 40 Menit)
+Repositori Data: Menggunakan berbagai penyimpanan data berdasarkan tipe data, format data, dan kebutuhan lainnya, seperti data mining. (7 Jam 25 Menit)
+ETL Pipelines: Extract: Memecahkan masalah pengumpulan data dengan melalui proses extract, transform, dan load (ETL) pipelines untuk mengambil serta mengenali data yang relevan menggunakan Python. (9 Jam 30 Menit)
+ETL Pipelines: Transform dan Load: Memecahkan masalah data kotor dengan melakukan transformasi untuk membersihkan dan mengubah data, serta load untuk menyimpan data dalam proses extract, transform, dan load (ETL) pipelines. (12 Jam 20 Menit) 
+Automasi dengan Python: Memproyeksikan proses automasi dalam data pipeline. (7 Jam 20 menit)";https://www.dicoding.com/certificates/98XWEDK9LXM3;May-25;Data Processing.png
+Data Science;Dicoding;Python Data Analysis;"Dasar-Dasar Analisis Data: memahami berbagai konsep dasar analisis data beserta tahapannya (2 Jam 15 Menit).
+Penerapan Dasar-Dasar Descriptive Statistics: mengetahui konsep dasar descriptive statistics dan penerapannya dalam proses analisis data (2 Jam 50 Menit).
+Pertimbangan dalam Pengolahan Data: mengidentifikasi berbagai hal penting yang harus diperhatikan ketika mengolah data (1 Jam 50 Menit).
+Data Wrangling: mengimplementasikan berbagai teknik data wrangling guna menyiapkan data yang bersih dan siap dianalisis.  (3 Jam 50 Menit).
+Exploratory Data Analysis: menerapkan berbagai teknik EDA guna memperoleh gambaran terkait data yang dianalisis (3 Jam 20 Menit).
+Data Visualization: Menerapkan berbagai teknik visualisasi data yang efektif guna mempermudah penyampaian hasil analisis data (3 Jam 50 Menit).
+Pengembangan Dashboard: membuat dashboard menggunakan streamlit sebagai media penyampaian hasil analisis data yang interaktif (4 Jam 15 Menit).";https://www.dicoding.com/certificates/2VX3KD49JXYQ;May-25;Data Analysis.png
+Data Science;Dicoding;Data Science Basic;"The Power of Data: Menunjukkan secara luas tentang data mulai dari Berkenalan dengan Dta, Jenis-Jenis Data, menentukan Keputusan dengan Data, hingga latihan terkait data untuk mengasah pemahaman terhadap materi. (100 menit)
+
+Fundamental Data Science: Mengenalkan ilmu dasar data science mulai dari mengetahui istilah data science yang berisi deskripsi dan fakta menarik tentang data science, tren data science, hingga keterampilan yang harus dimiliki oleh seorang data science. (90 menit)
+
+Menjelajahi Analisis Data: Membahas tentang analisis data mulai dari pengenalan istilah, siklus, hingga tahapan dalam proses analisis data itu sendiri. Selain itu terdapat studi kasus yang disajikan untuk meningkatkan pemahaman terhadap materi. (140 menit)
+
+Teknologi dan Tools Pendukung Data Science: Mengeksplorasi teknologi dan tools yang digunakan oleh data science seperti SQL, NoSQL, Excel/Spreadsheet, SPSS, Tableau, hingga perbandingan antara Python dan R. (70 menit)
+
+Machine Learning untuk Data Science: Mengenalkan penggunaan machine learning, alasan adanya machine learning di data science, hingga contoh penerapan machine learning di dunia nyata. (90 menit)
+
+Mulailah Mencari Peluang - Eksplorasi Hingga Membuat Portofolio: Menunjukkan peluang data science di dunia, mulai dari peluang karier di dunia data, tips dan triks menjadi data scientist, hingga latihan membuat portofolio data scientist. (85 menit)";https://www.dicoding.com/certificates/KEXL2NM6WZG2;Oct-24;Data Science Basic.png
+full stack;Dicoding;Node.js Application Developer;"Node Binary: Mengimplementasikan best practice ketika memasang, mengelola, dan menggunakan binary node beserta utilitas yang ada di dalamnya. (55 Menit)
+Debugging dan Diagnostic: Mendeteksi, mendiagnosis, hingga memperbaiki bugs pada program dengan memanfaatkan inspector proses dalam melakukan debugging program. (2 Jam 25 Menit)
+Package dan Dependencies: Menggunakan, membedakan, hingga membuat sebuah package Node.js (development maupun production) dengan menggunakan package manager npm. (1 Jam 30 Menit)
+Module System di Node.js: Menemukenali, menggunakan, hingga memecahkan masalah interopabilitas antara format sistem modularisasi CommonJS dan ESM. (2 Jam 25 Menit)
+Asynchronous Control Flow: Menggunakan callback, Promise, dan async-await untuk menangani proses asynchronous di Node.js (4 Jam 25 Menit)
+Event System di Node.js: Menggunakan Event Emitter untuk menerapkan sistem dengan pola event-driven di aplikasi Node.js. (2 Jam 35 Menit)
+Penanganan Error: Mendemonstrasikan penanganan error yang benar di Node.js. (3 Jam 10 Menit)
+Bekerja dengan Buffer: Mendemonstrasikan penggunaan Buffer mulai dari pembuatan hingga konversi menjadi tipe data lain. (2 Jam 5 Menit)
+Bekerja dengan Stream: Mendemomstrasikan penggunaan Stream mulai dari pembuatannya hingga cara menangani berbagai event yang ada di dalamnya. (3 Jam 25 Menit)
+Interaksi dengan File System: Menggunakan core module fs untuk membaca dan menulis berkas hingga mendeteksi perubahan berkas dan folder di Node.js. (3 Jam 35 Menit)
+Process dan Sistem Operasi: Berinteraksi dengan Standari Input dan Output, Exit Code, hingga menelaah informasi yang tersedia pada objek process dan os. (2 Jam 5 Menit)
+Membuat Child Process: Membuat child process, menguraikan berbagai options yang ada, hingga berkomunikasi antara process dengan child process. (2 Jam 15 Menit)
+Unit Testing: Mengidentifikasi dasar pengujian kode, menguji kode dengan core module assert dan testing runner framework, hingga merancang proyek Node.js yang dapat menjalankan pengujian dengan cara yang standar. (4 Jam 30 Menit)";https://www.dicoding.com/certificates/KEXL791WYXG2;Aug-24;Node.js App developer.png
+Cloud Engineer;Dicoding;Architecting on AWS;"Pendahuluan : Menjelaskan tentang materi pengenalan, seperti apa saja yang harus Anda siapkan sebelum mengikuti kelas, AWS Well-Architected Framework, dan AWS Global Infrastructure. (1 jam)
+Arsitektur Tersederhana : Membahas arsitektur yang paling sederhana, yakni Amazon S3, memilih AWS Regions, dan latihan meng-hosting website statis. (4 jam)
+Menambahkan Lapisan Komputasi : Menelaah materi terkait Amazon EC2, Amazon Machine Images, Amazon EBS, Amazon EFS, dan Amazon FSx. (1 jam)
+Menambahkan Lapisan Database : Mengupas tuntas materi tentang pertimbangan menambahkan lapisan database, Amazon RDS, Amazon DynamoDB, AWS DMS, dan latihan men-deploy aplikasi web di AWS. (5 jam)
+Jaringan di AWS - Bagian 1 : Mengulas materi seputar Amazon VPC, keamanan jaringan di cloud, dan latihan membuat VPC. (4 jam 40 menit)
+Jaringan di AWS - Bagian 2 : Mendeskripsikan materi tentang koneksi AWS VPN, AWS Direct Connect, VPC peering, AWS Transit Gateway, load balancing di AWS, dan Amazon Route 53. (1 jam)
+AWS Identity and Access Management (IAM) : Menelaah pembahasan akun pengguna dan AWS IAM, federasi pengguna, Amazon Cognito, dan AWS Organizations. (1 jam)
+Elastisitas, Ketersediaan Tinggi, dan Pemantauan : Menguraikan materi terkait Amazon CloudWatch, AWS CloudTrail, Amazon EC2 Auto Scaling; scaling database, dan latihan membuat lingkungan yang highly available. (4 jam 30 menit)
+Automasi : Mengkaji materi terkait AWS CloudFormation, AWS Systems Manager, AWS OpsWorks, AWS Elastic Beanstalk, dan latihan mengotomatiskan proses deploy infrastruktur dengan AWS CloudFormation. (5 jam)
+Caching : Menjelaskan caching di AWS dengan Amazon CloudFront, session management, Amazon DynamoDB Accelerator, dan Amazon ElastiCache. (2 jam)
+Membangun Decoupled Architecture : Mengulik Amazon SQS dan Amazon SNS. (1 jam 40 menit)
+Arsitektur Microservices dan Serverless : Membahas Amazon ECS, AWS Fargate, AWS Lambda, Amazon API Gateway, AWS Step Functions, dan latihan mengimplementasikan arsitektur serverless dengan AWS Managed Services. (4 jam 40 menit)
+RTO/RPO dan Backup Recovery Setup : Menelaah materi tentang perencanaan mitigasi bencana, replikasi data, strategi pemulihan, dan AWS Storage Gateway. (1 jam 50 menit)
+Pengoptimalan dan Ringkasan : Menguraikan praktik terbaik untuk pengoptimalan dan mengulas beberapa pertanyaan yang umum dihadapi developer dalam implementasi arsitektur AWS. (30 menit)";https://www.dicoding.com/certificates/GRX539O1YZ0M;Aug-24;Architechting on AWS.png
+others;Dicoding;GitHub Basics;"Git dan GitHub : Mengerti apa itu Git dan GitHub serta manfaatnya dalam mengelola data atau kode. (1 Jam 45 Menit)
+Dasar Git : Mengerti dasar-dasar pengelolaan data atau kode dengan Git, seperti membuat repository, membuat berkas, git commit, dan git checkout. (2 Jam 5 Menit) 
+Studi Kasus Pengalaman Belajar : Meningkatkan pengalaman belajar mengenai dasar-dasar Git melalui sebuah studi kasus. (1 Jam 20 Menit) 
+Git Branches : Mengerti konsep branching di dalam Git, akan mempelajari juga merging dan menyelesaikan conflict. (2 Jam 10 Menit) 
+Kolaborasi dengan Tim : Mengerti bagaimana cara berkolaborasi dengan tim lain pada repository yang sama seperti melakukan forking, squashing changes, dan code reviews. (2 Jam 50 Menit) 
+Studi Kasus Kolaborasi dengan Tim : Meningkatkan pengetahuan dalam berkolaborasi dengan tim seperti membuat repository baru, menyalin repository, dan studi kasus menangani pull request pada sebuah repository aktif di GitHub. (1 jam 15 Menit) 
+GitHub sebagai Portofolio : Mengerti penggunaan GitHub sebagai portofolio dengan latihan membuat readme yang dapat dimanfaatkan sebagai portofolio dalam berkarier. (1 Jam 20 Menit)";https://www.dicoding.com/certificates/JMZVV0LR3ZN9;May-24;git.png
+Cloud Engineer;Dicoding;Machine Learning Implementation using Google Cloud;"Mengelola Model TensorFlow di Lingkungan Produksi: mengerti pengelolaan model machine learning dari TensorFlow untuk berbagai lingkungan production, seperti web, server, dan perangkat lainnya seperti Android. (3 jam 45 menit)
+
+Training dan Deployment Machine Learning pada Google Cloud: Anda akan diajak untuk memahami berbagai penerapan machine learning di Google Cloud mulai dari penggunaan Google Cloud CLI sebagai tools-nya, memanfaatkan Compute Engine untuk melakukan training dan deployment model hingga App Engine untuk deployment aplikasi machine learning. (9 jam 35 menit)
+
+Mengoptimalkan Penyimpanan Data dengan Google Cloud: memahami secara mendalam penggunaan layanan-layanan data dari Google Cloud meliputi Cloud Storage dan Firestore untuk penyimpanan data aplikasi machine learning. (4 Jam 20 menit)
+
+Studi Kasus: Membangun Aplikasi Machine Learning dengan Google Cloud: mempelajari cara membangun aplikasi machine learning dengan Google Cloud sebagai environment-nya. Modul ini dikemas dengan sebuah cerita fiktif dari perusahaan bernama Serta Mulia sehingga Anda dapat menemukan penerapan  machine learning yang nyata berdasarkan sebuah kisah. (9 jam 55 menit)
+
+Mendalami Machine Learning Melalui Vertex AI: mengetahui layanan khusus AI dari Google Cloud bernama Vertex AI yang menawarkan berbagai tools untuk pengembangan model machine learning, mulai dari pengembangan hingga machine learning operations (MLOps). (2 jam 45 menit)";https://www.dicoding.com/certificates/07Z60WMORZQR;May-24;Gcloud Machine Learning.png
+Data Science;Dicoding;AI Basics;"Berkenalan dengan Artificial Intelligence (AI): Mengidentifikasi konsep dasar tentang AI. (1 jam 30 menit)
+Data untuk AI: Memaparkan konsep dasar tentang data serta pemanfaatannya dalam pengembangan AI. (1 jam 25 menit)
+Pengantar Machine Learning: Menjelaskan konsep dasar Machine Learning sebagai bagian dari AI beserta contoh penerapannya. (2 jam 30 menit)
+Deep Learning Untuk Semua Orang: Mengidentifikasi konsep penting dalam Deep Learning beserta mengimplementasikan contoh penerapannya. (2 jam 25 menit)";https://www.dicoding.com/certificates/07Z6086KRZQR;May-24;AI Basic.png
+Cloud Engineer;Dicoding;Google Cloud Engineer;"Pengenalan Google Cloud: Mempelajari konsep cloud computing dan menyiapkan lingkungan untuk memulai pengembangan aplikasi di Google Cloud.  (2 jam 35 menit)
+Layanan Komputasi di Google Cloud: Mempelajari berbagai layanan komputasi di Google Cloud dan bagaimana men-deploy sebuah aplikasi berbasis web. (6 jam)
+Layanan Data di Google Cloud: Mempelajari beberapa layanan yang terkait dengan pengelolaan data di Google Cloud. (6 jam)
+Layanan Jaringan di Google Cloud: Mempelajari berbagai layanan jaringan di Google Cloud yang memungkinkan banyak layanan saling berkomunikasi. (2 jam 25 menit)
+Monitoring dan Logging : Mempelajari penggunaan Google Cloud's operations suite untuk memantau kondisi aplikasi dan menerima laporan ketika terjadi kegagalan. (3 jam 20 menit)
+Manajemen Identitas dan Akses: Mempelajari manajemen identitas dan akses di Google Cloud dalam pengembangan solusi cloud. (2 jam 33 menit)
+Deploy dan Implementasi Solusi Cloud : Mempelajari penggunaan Google Cloud Marketplace untuk pengembangan solusi cloud serta mengetahui praktik terbaik dalam mengembangkan solusi cloud. (2 jam)";https://www.dicoding.com/certificates/MRZMELE8RPYQ;May-24;Gcloud Engineer.png
+others;Dicoding;Programming Logic 101;"Pendahuluan : Pengenalan istilah logika dan algoritma dan jenis-jenis logika pemrograman dasar. (1 jam 9 menit)
+Gerbang Logika : Mengetahui apa itu gerbang logika dan jenis-jenisnya seperti AND, OR, NOT, NAND, NOR, XOR, dan XNOR. (1 jam 49 menit)
+Pengenalan Dasar Computational Thinking : Mengetahui cara penyelesaian masalah menggunakan metode computational thinking meliputi, dekomposisi, pengenalan pola, abstraksi, penulisan algoritma, dan evaluasi. (1 jam 24 menit)
+Penutup : Mengerti bagaimana ilmu logika pemrograman yang telah dipelajari dapat digunakan pada studi kasus yang nyata. (1 jam 7 menit)";https://www.dicoding.com/certificates/72ZDKDMLLPYW;May-24;programming 101.png
+Data Science;Dicoding;Machine Learning Basics;"Modul 1: Hi, Machine Learning
+Memperkenalkan dasar-dasar machine learning, termasuk definisi, sejarah, dan aplikasinya di berbagai bidang. (4 jam)
+Modul 2: Machine Learning Workflow
+Menjelaskan alur kerja dalam proyek machine learning, mulai dari pengumpulan data hingga evaluasi model dan penerapan. (14 jam 45 menit)
+Modul 3: Supervised Learning - Klasifikasi
+Membahas konsep klasifikasi dalam supervised learning, serta algoritma yang umum digunakan seperti KNN dan Decision Tree. (9 jam 5 menit)
+Modul 4: Supervised Learning - Regresi
+Mempelajari teknik regresi untuk memprediksi nilai kontinu, termasuk regresi linear dan evaluasi model. (10 jam)
+Modul 5: Unsupervised Learning - Clustering
+Memperkenalkan metode clustering untuk mengelompokkan data tanpa label, seperti menggunakan algoritma K-Means dan evaluasinya. (6 jam 55 menit)
+Modul 6: Teknik Feature Engineering
+Membahas strategi dalam feature engineering untuk mengoptimalkan fitur dan meningkatkan kinerja model machine learning. (7 jam 5 menit)
+Modul 7: Overfitting dan Underfitting
+Menjelaskan konsep overfitting dan underfitting dalam model machine learning, serta teknik untuk mencegah masalah ini. (4 jam 50 menit)
+Modul 8: Optimasi Model dengan Hyperparameter Tuning
+Mempelajari pentingnya hyperparameter tuning dan teknik yang digunakan untuk meningkatkan akurasi model. (6 jam 15 menit)";https://www.dicoding.com/certificates/MRZML090NXYQ;Nov-23;Machine Learning Basic.png
+full stack;Dicoding;UX Design Basics;"Konsep Dasar UX (User Experience) Design : Memahami konsep dasar UX Design dan faktor yang mempengaruhinya, serta memahami proses desain dengan menggunakan pendekatan Design Thinking. (1 jam 15 menit)
+Empathize, Define, & Ideate : Memahami bagaimana cara untuk mengetahui masalah utama (pain point) pengguna dengan membuat Empathy Map, User Persona, dan User Journey Map. Dilanjutkan dengan mendefinisikan masalah dalam Problem Statement dan melakukan eksplorasi untuk mencari solusi dengan menggunakan metode How Might We (HMW) dan Crazy Eight. (4 jam 5 menit)
+Storyboard dan Wireframe : Mendefinisikan solusi dalam bentuk Goal Statement dan mengetahui cara membuat rancangan desain dengan membuat User Flow, Storyboard, dan Wireframe. (4 jam)
+High-Fidelity Prototype : Memahami cara membuat Mockup dan High-Fidelity Prototype yang menarik dan interaktif dengan menerapkan prinsip desain visual. (4 jam 30 menit)
+UX Research dan Dokumentasi : Merencanakan dan melakukan usability study, mengidentifikasi insight, memodifikasi desain berdasarkan hasil riset, dan membagikan hasil desain kepada tim. (3 jam)";https://www.dicoding.com/certificates/KEXLLNJWWXG2;Oct-23;UX Design.png
+IT Support;Dicoding;Structured Query Language (SQL) Basics;"Pengenalan Data dan Basis Data: Mengenalkan data secara umum dan mengidentifikasi pentingnya data. Pada materi ini Anda akan mempelajari jenis-jenis data, tipe-tipe data, kemudian perbedaan antara data, basis data, dan dataset, serta mengenal basis data relasional. (1 jam 20 menit)
+
+Database Management Systems (DBMS): Mengidentifikasi DBMS yang umum digunakan untuk mempelajari bahasa structured query language (SQL). Pada materi ini Anda akan mempelajari berbagai pilihan DBMS dan mengeksplorasi penggunaan DBMS di industri. (1 jam 25 menit)
+
+Pengenalan Structured Query Language: Anda akan mengidentifikasi penyusun structured query language (SQL) di kelas dasar seperti data definition language (DDL) yang terdiri dari mengenal dan menyajikan tabel, implementasi tabel pada sehari-hari, tipe data yang didukung oleh tabel serta latihan. Kemudian data manipulation language (DML) yang terdiri dari SELECT, INSERT, UPDATE, dan DELETE. Lalu constraints yang terdiri dari unique, index, dan primary key. Anda juga akan mempelajari diagram yang didukung oleh bahasa SQL. (4 jam)
+
+Basic Query: Pada modul ini Anda akan mengeksplorasi query yang akan Anda gunakan sebagai latihan seperti INSERT, SELECT & FROM, WHERE, hingga DELETE. (3 jam)";https://www.dicoding.com/certificates/81P239J1JXOY;Aug-23;sql.png
+others;Dicoding;Project Management Basic;"Pengenalan Manajemen Proyek. Menafsirkan definisi manajemen proyek secara luas dan menjelaskan penerapan manajemen proyek pada kegiatan sehari-hari. Pada materi ini Anda akan mempelajari peran manajer proyek, latihan membuat resume, memahami nilai seorang manajer proyek, tanggung jawab manajer proyek, kerjasama lintas fungsi, dan kompetensi utama yang dibutuhkan oleh seorang manajer proyek. (1 Jam 10 Menit)
+
+Siklus dan Metodologi Manajemen Proyek. Menggambarkan siklus manajemen proyek dan metodologi yang digunakan. Pada materi ini Anda akan mempelajari eksplorasi fase siklus manajemen proyek seperti inisiasi proyek, rencana proyek, eksekusi proyek, dan menutup proyek. Anda juga akan disuguhkan materi terkait Waterfall versus Agile, kemudian Lean serta Six Sigma. (4 Jam 25 Menit) 
+
+Struktur dan Budaya Organisasi. Mempelajari struktur, studi kasus terkait struktur klasik dan matriks, serta mengidentifikasi peran PMO (Project Management Officer). (1 Jam 35 Menit)
+
+Mengejar Karier Manajemen Proyek. Mengeksplorasi karier yang akan didapatkan ketika lulus kelas manajemen proyek, menerapkan kata kunci spesifik untuk posisi manajemen proyek di situs pencarian kerja seperti Dicoding Jobs, LinkedIn, Glints, dan platform lainnya, serta mampu paham dan mengingat bagaimana alur pencariannya. (1Jam 30 Menit)
+
+Menutup Proyek. Berisi seluruh rangkuman modul-modul yang telah dipelajari sebelumnya serta terdapat ujian akhir sebagai prasyarat kelulusan pada kelas manajemen proyek. (1 Jam 5 Menit)";https://www.dicoding.com/certificates/NVP7O0MN4PR0;Aug-23;project.png
+full stack;Dicoding;Back-End Basic with JavaScript;"Pengenalan ke Back-End : Menjelaskan peran front-end dan back-end, bagaimana cara client dan server berkomunikasi melalui protokol HTTP, dan arsitektur RESTFul API dalam membangun web service. (3 Jam) 
+Dasar-Dasar Node.js : Mengenal Node.js serta mengetahui dasar dari Node.js seperti global dan process object, modularization, Node Package Manager (NPM), eventing, filesystem, dan teknik stream. (8 Jam) 
+Membangun Web Service menggunakan Node.js : Membangun Web Service menggunakan Node.js secara native dan melalui framework Hapi, membangun RESTFul API sederhana. (10 Jam) 
+Deploy Web Service : Mengenal dan menggunakan Amazon EC2, mengoperasikan Amazon EC2 melalui SSH, menjalankan RESTFul API di Amazon EC2. (5 Jam) 
+Mengonsumsi dan Menguji RESTful API menggunakan Postman : Memasang Postman. Mengonsumsi RESTful API untuk tujuan pengujian dan menuliskan skenario uji otomatis menggunakan Postman. (5 Jam)";https://www.dicoding.com/certificates/2VX3JMLDNPYQ;Jul-23;back end basic.png
+others;Dicoding;Kotlin Basic Programming;"Pendahuluan : Memperkenalkan sejarah Kotlin, mengapa harus mempelajari Kotlin, karakteristik Kotlin, dan bagaimana Kotlin berperan dalam pengembangan aplikasi. Akan dibahas juga tentang ekosistem Kotlin. (4 jam 30 menit) 
+Persiapan Membangun dan Menjalankan Program Kotlin : Membuat program pertama di Kotlin dan menjalankannya. Selain itu, Anda akan belajar bagaimana menyiapkan dan menginstal beberapa tools seperti IDE dan build tools. Materi ini akan fokus pada penggunaan Gradle sebagai build tools dan menggunakan Kotlin DSL sebagai bahasa pada Gradle. Selain itu, pada materi ini akan membahas tentang struktur Gradle, cara menambahkan dependensi, menambahkan plugin, dan cara mengkonfigurasi plugin. (5 jam) 
+Kotlin Fundamental : Memahami tentang teori dasar Kotlin dengan mempelajari konsep dasar dari Kotlin seperti menggunakan tipe data, membuat fungsi dasar, menangani tipe data null, dan membuat String Template. (5 jam) 
+Control Flow : Mempelajari perbedaan antara expression dan statement, cara menggunakan enumeration, cara mengontrol aliran program menggunakan ekspresi if dan when, dan bagaimana menerapkan perulangan menggunakan while, do-while, dan break and continue. (4 jam) 
+Data Classes dan Collections : Fokus pada bagaimana mengelola data di Kotlin dengan menggunakan data class dan collection. Anda juga akan belajar mengenai perbedaan antara collection yang ada pada Kotlin dan menggunakannya. (4 jam 30 menit) 
+Kotlin Functional Programming : Memahami konsep function programing dengan mempelajari extension, lambda, higher-order function, recursion serta melihat contoh penerapannya pada collection operator dan scope function. (7 jam 30 menit)
+Kotlin Object-Oriented Programming : Memahami mengenai konsep OOP pada Kotlin, bagaimana membuat sebuah class, properti dan fungsi dari class, dan mensimulasikan problematika dunia nyata dalam paradigma object-oriented programming (OOP). Memahami konsep OOP dengan mempelajari inheritance, abstract class, interface, visibility modifier, dan overloading. (7 jam 20 menit) 
+Kotlin Generics : Belajar tentang variance dan cara menggunakan generic untuk membuat kelas yang dapat menerima berbagai jenis tipe data. (2 jam 30 menit) 
+Berkenalan dengan Coroutines : Belajar dasar dari konsep concurrency seperti process dan thread. Anda juga akan diajarkan tentang permasalahan dalam proses yang bersamaan seperti deadlock, livelock, starvation, dan race condition. Dengan memahami permasalahan tersebut, Anda akan belajar menggunakan Coroutine dalam menyelesaikannya. (5 jam 25 menit)";https://www.dicoding.com/certificates/07Z6VO282XQR;Jun-23;kotlin.png
+full stack;Dicoding;Basic Javascript Programming;"Pengenalan Kelas : Pengenalan kelas dan apa saja yang akan dipelajari. (10 menit)
+Pengenalan JavaScript : Pengenalan tentang apa itu JavaScript, bagaimana sejarahnya, dan beberapa alasan untuk mulai mempelajarinya. (30 menit)
+JavaScript Fundamentals : Menjelaskan dasar logika dan sintaksis pemrograman menggunakan JavaScript, seperti variabel, tipe data, dan perulangan. (5 jam 35 menit)
+Data Structure : Menjelaskan bagaimana menyimpan dan mengelola data yang lebih kompleks menggunakan Object, Array, Map, dan Set. (4 jam 35 menit)
+Function : Menjelaskan bagaimana mengelompokkan kode menjadi fungsi yang dapat dipanggil ulang. (4 jam 35 menit)
+Object-Oriented Programming : Menjelaskan konsep OOP pada JavaScript, bagaimana membuat class, properti, dan method dari class. (4 jam 55 menit)
+Functional Programming : Memahami konsep functional programming seperti perilaku fungsi, lambda, dan higher-order. (2 jam 35 menit)
+Setup Environment : Proses instalasi lingkungan pengembangan seperti Node.js dan IDE pada perangkat yang Anda miliki. (3 jam)
+Module : Menjelaskan bagaimana beberapa berkas JavaScript dapat saling berkomunikasi dan berbagi data satu sama lain. (2 jam 55 menit)
+Error Handling : Menjelaskan bagaimana menangani kegagalan yang mungkin muncul dalam program sehingga tidak berdampak kepada pengguna. (3 jam 35 menit)
+Concurrency : Menjelaskan bagaimana menangani dan membuat proses asynchronous pada JavaScript. (5 jam 55 menit)
+Node Package Manager : Mengenalkan beberapa library yang penting untuk ditambahkan ke dalam proyek aplikasi JavaScript. (1 jam 50 menit)
+JavaScript Testing : Menjelaskan bagaimana melakukan pengujian otomatis pada kode JavaScript. (3 jam 20 menit)";https://www.dicoding.com/certificates/07Z60RR9WZQR;Apr-24;JS basic.png
+Cloud Engineer;Dicoding;AWS Cloud Practitioner Essentials;"Pengantar ke Amazon Web Services : Menjelaskan tentang persiapan sebelum mengikuti kelas, manfaat dari AWS, perbedaan antara penyajian on-demand dan model penerapan cloud, serta model biaya dengan skema pay-as-you-go. (45 menit)
+Komputasi di Cloud : Membahas materi komputasi di cloud, seperti Amazon EC2, Elastic Load Balancing, perbedaan Amazon SNS dan Amazon SQS, serta layanan komputasi lain di AWS. (1 jam 30 menit)
+Infrastruktur Global dan Keandalan : Menelaah materi terkait infrastruktur global AWS, konsep dasar Availability Zone, manfaat Amazon CloudFront dan Edge locations, serta membandingkan perbedaan metode untuk penyajian layanan AWS. (45 menit)
+Jaringan : Mengupas tuntas konsep dasar jaringan, perbedaan sumber daya jaringan publik dan privat, virtual private gateway dan virtual private network, AWS Direct Connect, manfaat penerapan arsitektur hybrid, lapisan keamanan yang digunakan dalam strategi IT, dan layanan untuk berinteraksi dengan jaringan global AWS. (1 jam 15 menit)
+Penyimpanan dan Database : Mengulas konsep dasar penyimpanan dan database, manfaat Amazon EBS, Amazon S3, Amazon EFS, variasi solusi penyimpanan, Amazon DynamoDB, dan terakhir ragam layanan database. (1 jam 15 menit)
+Keamanan : Mendeskripsikan materi shared responsibility model, multi-factor authentication, AWS IAM, dasar-dasar kebijakan keamanan; AWS Organizations, compliance dengan AWS, dan layanan keamanan utama AWS yang mudah. (1 jam 30 menit)
+Pemantauan dan Analitik : Menelaah pendekatan untuk memantau lingkungan AWS Anda, manfaat Amazon CloudWatch, AWS CloudTrail, dan AWS Trusted Advisor. (45 menit)
+Harga dan Dukungan : Menguraikan materi AWS Free Tier, AWS Organizations dan consolidated billing, AWS Budgets, AWS Cost Explorer, AWS Pricing Calculator, membedakan setiap AWS Support Plan, dan terakhir AWS Marketplace. (1 jam 15 menit)
+Migrasi dan Inovasi : Mengkaji materi terkait AWS CAF, enam faktor utama dari strategi migrasi cloud, manfaat beragam solusi migrasi data, dan cakupan luas dari solusi inovatif yang ditawarkan AWS. (40 menit)
+Perjalanan Cloud : Menjelaskan lima pilar dari AWS Well-Architected Framework dan enam manfaat dari komputasi cloud. (40 menit)
+Dasar-Dasar AWS Certified Cloud Practitioner : Mengulik sumber daya untuk persiapan ujian AWS Certified Cloud Practitioner sekaligus manfaat menjadi seseorang yang bersertifikat AWS. (1 jam 30 menit)";https://www.dicoding.com/certificates/QLZ9QWJ39Z5D;Apr-23;Cloud Practice.png
+full stack;Dicoding;Fundamental Front-End Web Development;"ECMAScript 6: Belajar menerapkan sintaks terbaru pada JavaScript seperti block scope variable, template literals, destructuring object and array, spread operator dan rest parameters, arrow function, classes, promise hingga JavaScript module. (20 jam 50 menit)
+Web Component: Belajar membangun component UI website yang bersifat reusable dan encapsulated dengan custom element dan shadow DOM. (10 jam 25 menit) 
+Package Manager untuk Aplikasi Web: Belajar menambahkan, menghapus, dan menggunakan package JavaScript yang tersedia di NPM, serta membedakan peranan dari development dependencies dan production dependencies. (4 jam 15 menit)
+Bundel dengan Module Bundler: Belajar penerapan module bundler sebagai build tools bagi aplikasi web untuk membundel berkas-berkas JavaScript menjadi satu berkas statis yang siap rilis dan optimal. (7 jam 25 menit)
+Asynchronous JavaScript Request: Belajar transaksi data melalui protokol HTTP/HTTPS menggunakan Fetch API, baik menggunakan method GET, POST, PUT, maupun DELETE. (10 jam)";https://www.dicoding.com/certificates/QLZ9QWJR7Z5D;Apr-23;fundamental FE.png
+full stack;Dicoding;Front-End Web Basics;"Browser Object Model dan Document Object Model: Mempelajari penerapan BOM dan DOM pada halaman website. Selain itu, modul ini mengajarkan teknik pemanipulasian DOM menggunakan JavaScript. (7 jam 55 menit)
+Interaktif dengan Event: Mempelajari penerapan event dalam menciptakan interaktifitas pada HTML element. (10 jam 45 menit)
+Penyimpanan Data dengan Web Storage: Mempelajari API browser yang berguna untuk penyimpanan data melalui Web Storage. Dalam modul ini mengajarkan mengenai tipe-tipe storage beserta penerapannya. (8 jam 25 menit";https://www.dicoding.com/certificates/81P23E94JXOY;Mar-23;front end basics.png
+others;Dicoding;DevOps Basic;"Pengenalan DevOps : Mengetahui pengertian dan manfaat dari DevOps (2 jam).
+Prinsip-Prinsip DevOps : Memahami prinsip-prinsip yang mendasari DevOps melalui The Three Ways (3 jam).
+CALMS Framework : Memahami kultur DevOps melalui CALMS Framework (2 jam 53 menit).
+Praktik DevOps : Mengerti praktik DevOps dengan mengenal DevOps Pipeline dan DevOps Tools (2 jam 10 menit).
+Kisah Implementasi DevOps : Mengetahui bagaimana kisah pengimplementasian DevOps pada kasus nyata dengan mengambil contoh perusahaan Amazon (1 jam 50 menit).";https://www.dicoding.com/certificates/4EXGNMWQDZRL;Dec-22;devops basic.png
+IT Support;Coursera;Google IT Support;"Gain skills required to succeed in an entry-level IT job
+Learn to perform day-to-day IT support tasks including computer assembly, wireless networking, installing programs, and customer service
+Learn how to provide end-to-end customer support, ranging from identifying problems to troubleshooting and debugging
+Learn to use systems including Linux, Domain Name Systems, Command-Line Interface, and Binary Code
+";https://coursera.org/share/dfee4abb6019cc508704ecbf5c2b2c14;Mar-24;Google IT Support.png
+IT Support;Coursera;Google Cybersecurity;"Understand the importance of cybersecurity practices and their impact for organizations.
+Identify common risks, threats, and vulnerabilities, as well as techniques to mitigate them.
+Protect networks, devices, people, and data from unauthorized access and cyberattacks using Security Information and Event Management (SIEM) tools.
+Gain hands-on experience with Python, Linux, and SQL.";https://coursera.org/share/b5b12d110fedca285b319f45b8b97383;Jul-24;IT Cysec.png
+Cloud Engineer;Google Cloud;Google Cloud Computing Foundations Certificate;"Successful completion of the Google Cloud Computing Foundations: Cloud Computing Fundamentals course. This is the first of four courses in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Google Cloud Computing Foundations: Infrastructure in Google Cloud course. This is the second of four courses in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Google Cloud Computing Foundations: Networking & Security in Google Cloud course. This is the third of four courses in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud course. This is the fourth of four courses in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Implement Load Balancing on Compute Engine skill badge course. This is the first of four skill badges in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Set Up an App Dev Environment on Google Cloud skill badge course. This is the second of four skill badges in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Build a Secure Google Cloud Network skill badge course. This is the third of four skill badges in the Google Cloud Computing Foundations Certificate.
+Successful completion of the Prepare Data for ML APIs on Google Cloud skill badge course. This is the fourth of four skill badges in the Google Cloud Computing Foundations Certificate.";https://www.credly.com/badges/00912830-1fe7-4b13-824c-06abbc6e3ef6/public_url;May-24;GCLOUD.png
+full stack;KADIN;"
+Offline Training Font-End Web Developer IDCamp x KADIN 2023";"Memberikan pemahaman mendalam tentang HTML, CSS, dan JavaScript sebagai fondasi front end.Melatih peserta menggunakan framework populer (misalnya React atau Vue) untuk membangun aplikasi web.
+Meningkatkan keterampilan desain UI/UX agar produk lebih ramah pengguna. Menyiapkan peserta menghadapi kebutuhan dunia kerja dan industri digital.";;May-23;Sertifikat Solo-17.pdf.png
+others;The British Institute;English for Business;English for Business;;Jul-24;TBI.png
