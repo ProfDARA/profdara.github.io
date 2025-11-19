@@ -385,7 +385,7 @@ const SKILL_CERTS = [
     issuer: 'KADIN / IDCamp',
     issued: '2023-05',
     url: '',
-    image: 'assets/certs/Sertifikat Solo-17.pdf.png',
+    image: 'assets/certs/offline training.png',
     skills: ['HTML', 'CSS', 'JavaScript', 'Frameworks (React/Vue)', 'UI/UX basics'],
     desc: 'Intensive offline front-end training: core HTML/CSS/JS, modern frameworks and UI/UX considerations for industry readiness.'
   },
