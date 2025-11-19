@@ -29,10 +29,10 @@
     <main id="profil" class="card page">
       <div class="grid">
         <aside>
-          <div class="avatar"><img src="https://picsum.photos/seed/personal/500/400" alt="avatar"></div>
+          <div class="avatar"><img src="https://avatars.githubusercontent.com/u/134141535?v=4" alt="avatar"></div>
           <div class="meta">
             <h2>Danang Agung Restu Aji</h2>
-            <p>Computer Science student specializing in IT administration and Cloud Computing. Saat ini bekerja sebagai freelance NLP Research Engineer di lembaga penelitian pemerintah — membangun solusi otomatisasi untuk meningkatkan efisiensi operasional. Berpengalaman di backend, infrastruktur, dan pengembangan model NLP.</p>
+            <p>Computer Science student specializing in IT administration and Cloud Computing. Saat ini bekerja sebagai freelance NLP Research Engineer di lembaga penelitian pemerintah, yang membangun solusi otomatisasi untuk meningkatkan efisiensi operasional. Berpengalaman di backend, infrastruktur, dan pengembangan model NLP.</p>
           </div>
         </aside>
         <section>
@@ -245,7 +245,7 @@
           const meta = document.createElement('div'); meta.className='meta'; meta.textContent = (c.issuer||'') + ' • ' + (c.issued||'');
           const skills = document.createElement('div'); skills.style.marginTop='6px'; skills.style.color='var(--muted)'; skills.style.fontSize='13px'; skills.textContent = (c.skills||[]).join(' · ');
           content.appendChild(h); content.appendChild(meta); content.appendChild(skills);
-          if(c.url){ const a = document.createElement('a'); a.href=c.url; a.target='_blank'; a.textContent='View'; a.className='view-link'; content.appendChild(a); }
+          if(c.url){ const a = document.createElement('a'); a.href=c.url; a.target='_blank'; a.textContent='Source'; a.className='view-link'; content.appendChild(a); }
           card.appendChild(content);
 
           // preview image: use explicit image url if provided, otherwise fallback to a seeded picsum photo
