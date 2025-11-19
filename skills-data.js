@@ -149,7 +149,7 @@ const SKILL_CERTS = [
   // --- Dicoding (CSV entries)
   {
     id: 'penerapan-data-science-dicoding',
-    name: 'Penerapan Data Science',
+    name: 'Advanced Data Science',
     issuer: 'Dicoding',
     issued: '2025-06',
     url: 'https://www.dicoding.com/certificates/1OP82Q28LPQK',
