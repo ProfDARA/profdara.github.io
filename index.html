@@ -247,7 +247,23 @@
 
           // preview image: use explicit image url if provided, otherwise fallback to a seeded picsum photo
           const imgUrl = c.image || ('https://picsum.photos/seed/' + encodeURIComponent(c.id) + '/600/360');
-          const preview = document.createElement('div'); preview.className = 'preview'; preview.style.backgroundImage = 'url("'+imgUrl+'")';
+          const preview = document.createElement('div');
+          // start with loading state; JS will swap to loaded when image is ready
+          preview.className = 'preview loading';
+          // load the image off-DOM so we can detect when it's ready, then apply as background
+          (function loadBg(url, target){
+            const img = new Image();
+            img.onload = function(){
+              target.style.backgroundImage = 'url("'+url+'")';
+              target.classList.remove('loading');
+              target.classList.add('loaded');
+            };
+            img.onerror = function(){
+              target.classList.remove('loading');
+              target.classList.add('failed');
+            };
+            img.src = url;
+          })(imgUrl, preview);
           // clicking preview opens a lightbox with a larger image
           preview.addEventListener('click', (ev)=>{
             ev.stopPropagation();

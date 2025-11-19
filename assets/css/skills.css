@@ -151,6 +151,31 @@ body{ scrollbar-gutter: stable }
 .cert-card:hover .preview{ transform:translateX(0) }
 .cert-card .view-link{ display:inline-block; margin-top:8px; color:var(--accent); font-weight:600 }
 
+/* Image loading indicator: show a spinner while background image is loading.
+   JS should toggle `loading` -> `loaded` classes on the preview element. */
+.cert-card .preview.loading::after{
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 36px; height: 36px;
+  margin-left: -18px; margin-top: -18px;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.12);
+  border-top-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+  animation: spin 1s linear infinite;
+  z-index: 6;
+}
+.cert-card .preview.loaded::after{ display: none; }
+.cert-card .preview.failed::after{
+  /* show a muted indicator if load failed */
+  border-color: rgba(255,255,255,0.06);
+  border-top-color: rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.18);
+}
+
+@keyframes spin{ from{ transform: rotate(0deg) } to{ transform: rotate(360deg) } }
+
 /* Small screens: make preview full-width below content and reset paddings */
 @media (max-width:700px){
   .cert-card .content{ padding-right: 0 }
