@@ -71,7 +71,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/DL0031326339327',
-    image: 'assets/certs/Data Literacy.PNG',
+    image: 'assets/certs/data-literacy.png',
     skills: ['Analytics fundamentals', 'Data visualization', 'Data storytelling'],
     desc: 'Analytics fundamentals; creating effective visualizations; communicating insights through data storytelling.'
   },
@@ -81,7 +81,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/AIF0022429893962',
-    image: 'assets/certs/AI fundamentals.PNG',
+    image: 'assets/certs/ai-fundamentals.png',
     skills: ['AI basics', 'Generative AI', 'Ethical generative AI'],
     desc: 'Foundational AI concepts; overview of generative models; high-level ethical considerations for AI.'
   },
@@ -91,7 +91,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UDS0028710042472',
-    image: 'assets/certs/Understanding Data Science.PNG',
+    image: 'assets/certs/understanding-data-science.png',
     skills: ['Data science concepts', 'Workflows', 'Data types & storage', 'Modeling basics'],
     desc: 'Core data science concepts and workflows; data types and storage; roles and model usage (A/B testing, basic ML) in decision-making.'
   },
@@ -101,7 +101,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/AIE0028194915592',
-    image: 'assets/certs/AI Ethics.PNG',
+    image: 'assets/certs/ai-ethics.png',
     skills: ['Ethics frameworks', 'Bias & fairness', 'Transparency', 'Consent'],
     desc: 'Principles of data & AI ethics; identify risks across data lifecycle; considerations for bias, transparency and governance.'
   },
@@ -111,7 +111,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UDE0014688431999',
-    image: 'assets/certs/Data Engineering.PNG',
+    image: 'assets/certs/data-engineering.png',
     skills: ['Data pipelines', 'ETL', 'Data cleaning', 'Cataloging'],
     desc: 'Responsibilities of data engineers; fundamentals of pipelines, cleaning and cataloging; collaboration points with data scientists.'
   },
@@ -121,7 +121,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/ITE0011344223676',
-    image: 'assets/certs/Excel.PNG',
+    image: 'assets/certs/excel.png',
     skills: ['Core Excel functions', 'Formulas', 'Charts', 'Data validation'],
     desc: 'Cells/tables/formulas; aggregation (SUM/AVERAGE/COUNT); formatting and validation; selecting appropriate charts for datasets.'
   },
@@ -131,7 +131,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/ITPB0018227290634',
-    image: 'assets/certs/Power BI.PNG',
+    image: 'assets/certs/power-bi.png',
     skills: ['Power BI reports', 'DAX basics', 'Visuals', 'Deployment'],
     desc: 'Power BI components (report/data/relationship views); DAX vs M basics; visual techniques (hierarchies, drilldowns); deployment via Power BI Service.'
   },
@@ -141,7 +141,7 @@ const SKILL_CERTS = [
     issuer: 'DataCamp',
     issued: '2025-11',
     url: 'https://www.datacamp.com/skill-verification/UCG0013653598785',
-    image: 'assets/certs/chatGPT.PNG',
+    image: 'assets/certs/chatgpt.png',
     skills: ['ChatGPT basics', 'Prompting techniques', 'Use cases', 'Ethics overview'],
     desc: 'How ChatGPT differs from classic chatbots; practical prompting techniques; core use cases and ethical/privacy considerations.'
   },
@@ -153,7 +153,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2025-06',
     url: 'https://www.dicoding.com/certificates/1OP82Q28LPQK',
-    image: 'assets/certs/Data Science.PNG',
+    image: 'assets/certs/data-science.png',
     skills: ['Project management', 'Dashboarding', 'Customer segmentation', 'Credit scoring', 'PySpark', 'Cloud deployment'],
     desc: 'Project management for DS; building business dashboards; customer segmentation and credit scoring models; big data processing with PySpark; cloud deployment of DS projects.'
   },
@@ -163,7 +163,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2025-06',
     url: 'https://www.dicoding.com/certificates/2VX3KG2RJXYQ',
-    image: 'assets/certs/Deep Learning.PNG',
+    image: 'assets/certs/deep-learning.png',
     skills: ['Neural networks', 'TensorFlow/Keras', 'NLP', 'Time series', 'Image classification', 'Recommendation systems', 'Generative AI', 'RL'],
     desc: 'Deep learning foundations; TensorFlow/Keras workflows; NLP, time-series, image classification; recommendation systems and generative AI; model conversion and deployment.'
   },
@@ -173,7 +173,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2025-05',
     url: 'https://www.dicoding.com/certificates/98XWEDK9LXM3',
-    image: 'assets/certs/Data Processing.PNG',
+    image: 'assets/certs/data-processing.png',
     skills: ['Software engineering for data', 'Data repositories', 'ETL pipelines', 'Automation with Python'],
     desc: 'Software engineering practices for data projects; choosing data storage; full ETL pipeline (extract/transform/load); automation with Python.'
   },
@@ -183,7 +183,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2025-05',
     url: 'https://www.dicoding.com/certificates/2VX3KD49JXYQ',
-    image: 'assets/certs/Data Analysis.PNG',
+    image: 'assets/certs/data-analysis.png',
     skills: ['Descriptive statistics', 'Data wrangling', 'EDA', 'Visualization', 'Streamlit dashboards'],
     desc: 'Descriptive statistics and basic analysis; data wrangling techniques; exploratory data analysis; visualization best practices; building dashboards with Streamlit.'
   },
@@ -193,7 +193,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-10',
     url: 'https://www.dicoding.com/certificates/KEXL2NM6WZG2',
-    image: 'assets/certs/Data Science Basic.PNG',
+    image: 'assets/certs/data-science-basic.png',
     skills: ['Data fundamentals', 'Analysis workflows', 'Intro ML', 'Tools overview'],
     desc: 'Intro to data fundamentals and analysis lifecycle; overview of tools (SQL/NoSQL/Excel/Tableau); basic machine learning concepts and portfolio steps.'
   },
@@ -203,7 +203,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-08',
     url: 'https://www.dicoding.com/certificates/KEXL791WYXG2',
-    image: 'assets/certs/Node.js App developer.PNG',
+    image: 'assets/certs/nodejs-app-developer.png',
     skills: ['Node.js internals', 'Debugging', 'Package management', 'Async patterns', 'Streams', 'Testing'],
     desc: 'Node.js internals and best practices; debugging & diagnostics; package/dependency management; asynchronous patterns, streams, buffers, and unit testing.'
   },
@@ -213,7 +213,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-08',
     url: 'https://www.dicoding.com/certificates/GRX539O1YZ0M',
-    image: 'assets/certs/Architechting on AWS.PNG',
+    image: 'assets/certs/architechting-on-aws.png',
     skills: ['AWS architecture', 'Compute & storage', 'Networking', 'HA & scaling', 'IaC', 'Monitoring'],
     desc: 'AWS Well-Architected concepts; compute/storage/database services; VPC & networking; high availability and autoscaling; IaC and monitoring practices.'
   },
@@ -223,7 +223,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/JMZVV0LR3ZN9',
-    image: 'assets/certs/git.PNG',
+    image: 'assets/certs/git.png',
     skills: ['Git fundamentals', 'Branching', 'Collaboration', 'Portfolio'],
     desc: 'Core Git/GitHub workflows; branching/merging/conflict resolution; collaboration practices and using GitHub as a portfolio.'
   },
@@ -233,7 +233,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/07Z60WMORZQR',
-    image: 'assets/certs/Gcloud Machine Learning.PNG',
+    image: 'assets/certs/gcloud-machine-learning.png',
     skills: ['Model training & deployment', 'Vertex AI', 'Cloud storage', 'MLOps basics'],
     desc: 'Training and deploying TensorFlow models on GCP; Vertex AI usage; storage optimization; MLOps and production considerations.'
   },
@@ -243,7 +243,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/07Z6086KRZQR',
-    image: 'assets/certs/AI Basic.PNG',
+    image: 'assets/certs/ai-basic.png',
     skills: ['AI intro', 'Data for AI', 'ML intro', 'Deep learning fundamentals'],
     desc: 'Intro to AI, data roles in AI, basic ML workflows and an approachable deep learning overview.'
   },
@@ -253,7 +253,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/MRZMELE8RPYQ',
-    image: 'assets/certs/Gcloud Engineer.PNG',
+    image: 'assets/certs/gcloud-engineer.png',
     skills: ['GCP services', 'Compute & data', 'Networking', 'Monitoring', 'IAM'],
     desc: 'Fundamentals of GCP compute and data services; networking, monitoring & IAM; deploying cloud solutions.'
   },
@@ -263,7 +263,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-08',
     url: 'https://www.dicoding.com/certificates/NVP7O0MN4PR0',
-    image: 'assets/certs/Project.PNG',
+    image: 'assets/certs/project.png',
     skills: ['PM fundamentals', 'Methodologies', 'Stakeholder management', 'Project lifecycle'],
     desc: 'Project management fundamentals; methodologies (Waterfall/Agile/Lean); stakeholder and PMO roles; closing projects.'
   },
@@ -273,7 +273,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-11',
     url: 'https://www.dicoding.com/certificates/MRZML090NXYQ',
-    image: 'assets/certs/Machine Learning Basic.PNG',
+    image: 'assets/certs/machine-learning-basic.png',
     skills: ['Supervised learning', 'Unsupervised learning', 'Feature engineering', 'Tuning'],
     desc: 'ML workflow from data collection to evaluation; supervised/unsupervised techniques; feature engineering and hyperparameter tuning.'
   },
@@ -285,7 +285,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-10',
     url: 'https://www.dicoding.com/certificates/KEXLLNJWWXG2',
-    image: 'assets/certs/UX Design.PNG',
+    image: 'assets/certs/ux-design.png',
     skills: ['Design thinking', 'User research', 'Wireframing', 'Prototyping'],
     desc: 'UX fundamentals: empathy, user journeys, wireframes, high-fidelity prototypes and usability testing.'
   },
@@ -295,7 +295,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-08',
     url: 'https://www.dicoding.com/certificates/81P239J1JXOY',
-    image: 'assets/certs/sql.PNG',
+    image: 'assets/certs/sql.png',
     skills: ['SQL basics', 'DDL/DML', 'Basic queries', 'DBMS concepts'],
     desc: 'Intro to relational DBs and SQL; DDL/DML basics; common queries (SELECT/INSERT/UPDATE/DELETE) and DBMS overview.'
   },
@@ -305,7 +305,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-07',
     url: 'https://www.dicoding.com/certificates/2VX3JMLDNPYQ',
-    image: 'assets/certs/back end basic.PNG',
+    image: 'assets/certs/back-end-basic.png',
     skills: ['Node.js basics', 'Web services', 'Deployment', 'API testing'],
     desc: 'Backend fundamentals: Node.js, building RESTful services, deploy to EC2, and API testing with Postman.'
   },
@@ -315,7 +315,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-06',
     url: 'https://www.dicoding.com/certificates/07Z6VO282XQR',
-    image: 'assets/certs/kotlin.PNG',
+    image: 'assets/certs/kotlin.png',
     skills: ['Kotlin fundamentals', 'OOP', 'Coroutines', 'Functional features'],
     desc: 'Kotlin fundamentals including OOP, coroutines, generics and functional programming features.'
   },
@@ -325,7 +325,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-04',
     url: 'https://www.dicoding.com/certificates/07Z60RR9WZQR',
-    image: 'assets/certs/JS basic.PNG',
+    image: 'assets/certs/js-basic.png',
     skills: ['JS fundamentals', 'Data structures', 'OOP', 'Async'],
     desc: 'JavaScript fundamentals: syntax, data structures, OOP, functional programming, asynchronous programming and testing.'
   },
@@ -335,7 +335,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-04',
     url: 'https://www.dicoding.com/certificates/QLZ9QWJ39Z5D',
-    image: 'assets/certs/Cloud Practice.PNG',
+    image: 'assets/certs/cloud-practice.png',
     skills: ['AWS fundamentals', 'Pricing & support', 'Security', 'Migration basics'],
     desc: 'Fundamentals of AWS services, pricing/support models, security basics and migration concepts aligned to Cloud Practitioner.'
   },
@@ -345,7 +345,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-04',
     url: 'https://www.dicoding.com/certificates/QLZ9QWJR7Z5D',
-    image: 'assets/certs/fundamental FE.PNG',
+    image: 'assets/certs/fundamental-fe.png',
     skills: ['ES6', 'Web Components', 'Bundling', 'Async requests'],
     desc: 'Modern front-end fundamentals: ES6 features, web components, bundling, and async HTTP requests (fetch).'
   },
@@ -355,7 +355,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2023-03',
     url: 'https://www.dicoding.com/certificates/81P23E94JXOY',
-    image: 'assets/certs/front end basics.PNG',
+    image: 'assets/certs/front-end-basics.png',
     skills: ['DOM/BOM', 'Events', 'Web storage'],
     desc: 'DOM/BOM manipulation, event-driven interactivity, and browser web storage techniques.'
   },
@@ -365,7 +365,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2022-12',
     url: 'https://www.dicoding.com/certificates/4EXGNMWQDZRL',
-    image: 'assets/certs/devops basic.PNG',
+    image: 'assets/certs/devops-basic.png',
     skills: ['DevOps principles', 'CALMS', 'Pipelines', 'Tools overview'],
     desc: 'DevOps principles and culture (CALMS), CI/CD pipeline concepts and common DevOps tools.'
   },
@@ -375,7 +375,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/72ZDKDMLLPYW',
-    image: 'assets/certs/programming 101.PNG',
+    image: 'assets/certs/programming-101.png',
     skills: ['Logic basics', 'Computational thinking', 'Basic algorithms'],
     desc: 'Logic gates and computational thinking fundamentals; basic algorithmic problem solving.'
   },
@@ -385,7 +385,7 @@ const SKILL_CERTS = [
     issuer: 'KADIN / IDCamp',
     issued: '2023-05',
     url: '',
-    image: 'assets/certs/offline training.PNG',
+    image: 'assets/certs/offline-training.png',
     skills: ['HTML', 'CSS', 'JavaScript', 'Frameworks (React/Vue)', 'UI/UX basics'],
     desc: 'Intensive offline front-end training: core HTML/CSS/JS, modern frameworks and UI/UX considerations for industry readiness.'
   },
@@ -397,7 +397,7 @@ const SKILL_CERTS = [
     issuer: 'Coursera',
     issued: '2024-03',
     url: 'https://coursera.org/share/dfee4abb6019cc508704ecbf5c2b2c14',
-    image: 'assets/certs/Google IT Support.PNG',
+    image: 'assets/certs/google-it-support.png',
     skills: ['Helpdesk', 'Hardware & networking', 'Linux', 'Customer service'],
     desc: 'Practical IT support skills: troubleshooting hardware/networking, using Linux and providing end-to-end customer support.'
   },
@@ -407,7 +407,7 @@ const SKILL_CERTS = [
     issuer: 'Coursera',
     issued: '2024-07',
     url: 'https://coursera.org/share/b5b12d110fedca285b319f45b8b97383',
-    image: 'assets/certs/IT Cysec.PNG',
+    image: 'assets/certs/it-cysec.png',
     skills: ['Cybersecurity fundamentals', 'Threats & mitigations', 'SIEM', 'Hands-on security tools'],
     desc: 'Fundamentals of cybersecurity: threat/vulnerability identification, mitigation strategies and practical exposure to SIEM and security tooling.'
   },
@@ -417,7 +417,7 @@ const SKILL_CERTS = [
     issuer: 'Google Cloud / Credly',
     issued: '2024-05',
     url: 'https://www.credly.com/badges/00912830-1fe7-4b13-824c-06abbc6e3ef6/public_url',
-    image: 'assets/certs/GCLOUD.PNG',
+    image: 'assets/certs/gcloud.png',
     skills: ['Cloud fundamentals', 'Networking & security', 'Data & ML basics', 'Load balancing'],
     desc: 'Comprehensive foundations: cloud fundamentals, networking & security, data/ML basics and practical skill badges for GCP.'
   },
@@ -429,7 +429,7 @@ const SKILL_CERTS = [
     issuer: 'The British Institute',
     issued: '2024-07',
     url: '',
-    image: 'assets/certs/TBI.PNG',
+    image: 'assets/certs/tbi.png',
     skills: ['Business English', 'Professional communication', 'Presentations'],
     desc: 'Business English skills for workplace communication, presentations and professional correspondence.'
   },
