@@ -251,11 +251,33 @@
           // preview image: use explicit image url if provided, otherwise fallback to a seeded picsum photo
           const imgUrl = c.image || ('https://picsum.photos/seed/' + encodeURIComponent(c.id) + '/600/360');
           const preview = document.createElement('div'); preview.className = 'preview'; preview.style.backgroundImage = 'url("'+imgUrl+'")';
+          // clicking preview opens a lightbox with a larger image
+          preview.addEventListener('click', (ev)=>{
+            ev.stopPropagation();
+            openLightbox(imgUrl);
+          });
           card.appendChild(preview);
 
           certListEl.appendChild(card);
         });
         // If no items, show placeholder
+
+  // --- Lightbox implementation (creates overlay on demand)
+  function openLightbox(imageUrl){
+    let lb = document.getElementById('site-lightbox');
+    if(!lb){
+      lb = document.createElement('div'); lb.id = 'site-lightbox';
+      lb.style.position='fixed'; lb.style.inset='0'; lb.style.display='flex'; lb.style.alignItems='center'; lb.style.justifyContent='center';
+      lb.style.background='rgba(2,6,23,0.8)'; lb.style.zIndex=9999; lb.style.padding='24px'; lb.style.cursor='zoom-out';
+      const img = document.createElement('img'); img.id='site-lightbox-img'; img.style.maxWidth='100%'; img.style.maxHeight='100%'; img.style.borderRadius='10px'; img.style.boxShadow='0 12px 40px rgba(0,0,0,0.6)';
+      lb.appendChild(img);
+      lb.addEventListener('click', ()=>{ lb.style.display='none'; });
+      document.body.appendChild(lb);
+    }
+    const img = document.getElementById('site-lightbox-img');
+    img.src = imageUrl.replace(/^url\((?:\"|\')?(.+?)(?:\"|\')?\)$/,'$1');
+    lb.style.display = 'flex';
+  }
         if(ids.length===0){ const p = document.createElement('div'); p.style.color='var(--muted)'; p.textContent='No items available.'; certListEl.appendChild(p); }
       }
 
