@@ -223,7 +223,7 @@ const SKILL_CERTS = [
     issuer: 'Dicoding',
     issued: '2024-05',
     url: 'https://www.dicoding.com/certificates/JMZVV0LR3ZN9',
-    image: 'assets/certs/git.png',
+    image: 'assets/certs/git.PNG',
     skills: ['Git fundamentals', 'Branching', 'Collaboration', 'Portfolio'],
     desc: 'Core Git/GitHub workflows; branching/merging/conflict resolution; collaboration practices and using GitHub as a portfolio.'
   },
@@ -397,7 +397,7 @@ const SKILL_CERTS = [
     issuer: 'Coursera',
     issued: '2024-03',
     url: 'https://coursera.org/share/dfee4abb6019cc508704ecbf5c2b2c14',
-    image: 'assets/certs/Google IT Support.png',
+    image: 'assets/certs/Google IT Support.PNG',
     skills: ['Helpdesk', 'Hardware & networking', 'Linux', 'Customer service'],
     desc: 'Practical IT support skills: troubleshooting hardware/networking, using Linux and providing end-to-end customer support.'
   },
@@ -407,7 +407,7 @@ const SKILL_CERTS = [
     issuer: 'Coursera',
     issued: '2024-07',
     url: 'https://coursera.org/share/b5b12d110fedca285b319f45b8b97383',
-    image: 'assets/certs/IT Cysec.png',
+    image: 'assets/certs/IT Cysec.PNG',
     skills: ['Cybersecurity fundamentals', 'Threats & mitigations', 'SIEM', 'Hands-on security tools'],
     desc: 'Fundamentals of cybersecurity: threat/vulnerability identification, mitigation strategies and practical exposure to SIEM and security tooling.'
   },
@@ -417,7 +417,7 @@ const SKILL_CERTS = [
     issuer: 'Google Cloud / Credly',
     issued: '2024-05',
     url: 'https://www.credly.com/badges/00912830-1fe7-4b13-824c-06abbc6e3ef6/public_url',
-    image: 'assets/certs/GCLOUD.png',
+    image: 'assets/certs/GCLOUD.PNG',
     skills: ['Cloud fundamentals', 'Networking & security', 'Data & ML basics', 'Load balancing'],
     desc: 'Comprehensive foundations: cloud fundamentals, networking & security, data/ML basics and practical skill badges for GCP.'
   },
@@ -429,7 +429,7 @@ const SKILL_CERTS = [
     issuer: 'The British Institute',
     issued: '2024-07',
     url: '',
-    image: 'assets/certs/TBI.png',
+    image: 'assets/certs/TBI.PNG',
     skills: ['Business English', 'Professional communication', 'Presentations'],
     desc: 'Business English skills for workplace communication, presentations and professional correspondence.'
   },
