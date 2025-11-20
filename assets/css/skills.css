@@ -181,3 +181,42 @@ body{ scrollbar-gutter: stable }
   .cert-card .content{ padding-right: 0 }
   .cert-card .preview{ position:static; width:100%; height:140px; transform:none; border-radius:8px; margin-top:10px }
 }
+
+/* Mobile-first improvements: better spacing, larger tap targets, stacked previews */
+@media (max-width:600px){
+  .wrap{ margin:12px auto; padding:12px }
+  header{ flex-direction: column; align-items: flex-start; gap:10px }
+  .brand{ gap:8px }
+  .logo{ width:40px; height:40px }
+  nav{ flex-wrap:wrap; gap:6px }
+  .navlink{ padding:10px 14px; font-size:15px; border-radius:10px }
+  .navlink.active{ width:100%; }
+
+  .grid{ grid-template-columns: 1fr }
+  .avatar{ max-width:140px }
+  .avatar img{ width:100%; height:auto }
+  .meta h2{ font-size:18px }
+  .meta p{ font-size:13px }
+
+  /* Certificate list spacing tweaks */
+  .cert-list{ gap:12px; padding:8px }
+  .cert-card{ padding:12px; min-height:110px; font-size:14px }
+  .cert-card .content{ padding-right:0 }
+  .cert-card .meta{ font-size:13px }
+  .cert-card .view-link{ padding:8px 10px; display:inline-block }
+
+  /* Stacked preview: larger and touch-friendly */
+  .cert-card .preview{ position:static; width:100%; height:180px; transform:none; border-radius:8px; margin-top:12px }
+  .cert-card .preview.loading::after{ width:34px; height:34px; margin-left:-17px; margin-top:-17px }
+
+  /* Info panel becomes full-width block below content */
+  .info{ position:static; width:100%; margin-top:12px; right:auto; bottom:auto }
+  .info h3{ font-size:16px }
+
+  /* Make role tabs wrap and fill available width for easier tapping */
+  .tab-btn{ flex: 1 1 48%; min-width: 44%; padding:8px 10px; margin-bottom:6px; font-size:14px }
+
+  /* Hide thin scrollbars on mobile for a cleaner look */
+  .cert-list::-webkit-scrollbar{ display:none }
+  .cert-list{ scrollbar-width: none }
+}
