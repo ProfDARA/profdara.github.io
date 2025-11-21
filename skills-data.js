@@ -159,7 +159,7 @@ const SKILL_CERTS = [
   },
   {
     id: 'fundamental-deep-learning-dicoding',
-    name: 'Fundamental Deep Learning',
+    name: 'Deep Learning Fundamentals',
     issuer: 'Dicoding',
     issued: '2025-06',
     url: 'https://www.dicoding.com/certificates/2VX3KG2RJXYQ',
@@ -169,7 +169,7 @@ const SKILL_CERTS = [
   },
   {
     id: 'fundamental-data-processing-dicoding',
-    name: 'Fundamental Data Processing',
+    name: 'Data Processing Fundamentals',
     issuer: 'Dicoding',
     issued: '2025-05',
     url: 'https://www.dicoding.com/certificates/98XWEDK9LXM3',
@@ -341,7 +341,7 @@ const SKILL_CERTS = [
   },
   {
     id: 'fundamental-front-end-web-development-dicoding',
-    name: 'Fundamental Front-End Web Development',
+    name: 'Front-End Web Development Fundamentals',
     issuer: 'Dicoding',
     issued: '2023-04',
     url: 'https://www.dicoding.com/certificates/QLZ9QWJR7Z5D',
