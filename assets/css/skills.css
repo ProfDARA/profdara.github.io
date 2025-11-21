@@ -229,19 +229,29 @@ body{ scrollbar-gutter: stable }
   .info{ position:static; width:100%; margin-top:12px; right:auto; bottom:auto }
   .info h3{ font-size:16px }
 
-  /* Make role tabs wrap and fill available width for easier tapping */
-  /* make tab buttons 2 rows (3 per row) on small screens */
+  /* Make role/tab buttons touch-friendly on mobile
+     - default: two buttons per row (48% width)
+     - very small screens: single full-width buttons
+     Buttons use the same `tab-btn` class added by JS. */
   .tab-btn{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 14px;
-  }
-  .tab-btn > *{
-    flex: 0 0 calc((100% - 16px) / 3);
-    max-width: calc((100% - 16px) / 3);
-    min-width: 0;
+    display: inline-block;
+    width: 48%;
+    margin: 6px 1%;
+    padding: 10px 12px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid rgba(255,255,255,0.04);
+    cursor: pointer;
     box-sizing: border-box;
+  }
+  .tab-btn.active{ background: var(--glass); color: var(--accent); border-color: rgba(96,165,250,0.12); }
+
+  /* On very narrow screens, stack tabs full-width for easiest tapping */
+  @media (max-width:420px){
+    .tab-btn{ display:block; width:100%; margin:6px 0; font-size:16px; padding:12px 14px }
   }
 
 
